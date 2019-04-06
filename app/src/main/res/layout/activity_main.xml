@@ -6,11 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:weightSum="10">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
+        android:layout_weight="6"
         android:orientation="vertical">
 
         <LinearLayout
@@ -31,25 +33,35 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="3"
+            android:layout_weight="2"
             android:orientation="vertical">
 
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="농약 방제 대한민국 1등"
+                android:textColor="@android:color/black"
+                android:textSize="10pt"
+                android:fontFamily="@font/BMJUA_ttf"/>
 
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:fontFamily="@font/BMJUA_ttf"
                 android:text="빌리고"
-                android:textSize="30pt"
-                android:fontFamily="@font/BMJUA_ttf"/>
+                android:textColor="@android:color/black"
+                android:textSize="30pt" />
 
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
+        android:layout_weight="4"
         android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
@@ -69,15 +81,13 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="12"
+            android:layout_weight="5"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView4"
+            <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="copyright 손수영 류지원 박재훈"
-                android:textSize="10pt"/>
+                android:layout_height="70dp"
+                android:src="@drawable/main_banner" />
         </LinearLayout>
     </LinearLayout>
 
