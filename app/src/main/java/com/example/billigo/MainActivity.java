@@ -26,8 +26,8 @@ public class MainActivity extends BaseActivity {
                 handler.post(new Runnable() {
                     @Override
                     public void run() {
-                        startActivity(new Intent(MainActivity.this, HomeActivity.class));
-                        finish();
+                        startActivity(new Intent(getApplication(), HomeActivity.class));
+                        MainActivity.this.finish();
                         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                     }
                 });
