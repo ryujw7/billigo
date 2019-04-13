@@ -6,7 +6,13 @@
         android:right="1dp"
         android:top="1dp">
         <shape android:shape="rectangle" >
-            <stroke
+            <corners
+                android:topLeftRadius="12dp"
+                android:topRightRadius="12dp"
+                android:bottomLeftRadius="12dp"
+                android:bottomRightRadius="12dp"
+                />
+             <stroke
                 android:width="2dp"
                 android:color="@android:color/black" />
             <solid android:color="#FFFFFF" />
