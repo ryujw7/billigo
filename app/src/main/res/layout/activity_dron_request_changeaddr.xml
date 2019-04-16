@@ -82,7 +82,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="16"
-            android:src="@drawable/location_detecting_Button"
+            android:src="@drawable/location_detecting_button"
             android:background="@android:color/white"
             android:scaleType="fitXY"/>
 

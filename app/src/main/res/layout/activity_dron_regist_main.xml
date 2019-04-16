@@ -17,7 +17,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background=""
+            android:background="@drawable/main_textedge"
             android:fontFamily="@font/bmjua"
             android:text="첫 등록"
             android:textSize="25pt" />
@@ -27,7 +27,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:fontFamily="@font/bmjua"
-            android:background=""
+            android:background="@drawable/main_textedge"
             android:text="이미 등록"
             android:textSize="25pt" />
 
@@ -43,6 +43,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/DronRegist_Text"></ImageView>
+            android:src="@drawable/dronregist_text"></ImageView>
     </LinearLayout>
-
+</LinearLayout>

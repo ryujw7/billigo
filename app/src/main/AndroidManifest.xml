@@ -22,6 +22,9 @@
         <activity android:name=".RegTermsActivity"/>
         <activity android:name=".SearchidActivity"/>
         <activity android:name=".SearchpwActivity"/>
+        <activity android:name=".DronRegistMainActivity"/>
+        <activity android:name=".DronRequestChaddrActivity"/>
+
 
     </application>
 
