@@ -27,7 +27,7 @@ public class SplashActivity extends BaseActivity {
                 handler.post(new Runnable() {
                     @Override
                     public void run() {
-                        startActivity(new Intent(getApplication(), HomeActivity.class));
+                        startActivity(new Intent(getApplication(), MainActivity.class));
                         SplashActivity.this.finish();
                         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                     }
