@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="15">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/main_textedge"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center"
+            android:text="드론 등록 신청"
+            android:textColor="@android:color/black"
+            android:textSize="18pt"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"></FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="20">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="16"
+            android:layout_height="match_parent"
+            android:background="@drawable/main_textedge"
+            android:text="개인정보 제공 및 이용 약관 동의"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center_vertical"
+            android:textSize="10pt"
+            android:paddingLeft="4pt"
+            android:textColor="@android:color/black" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:src="@drawable/uncheckbox"
+            android:scaleType="fitXY"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="20">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="16"
+            android:layout_height="match_parent"
+            android:background="@drawable/main_textedge"
+            android:text="거래와 수익에 관한 약관 동의"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center_vertical"
+            android:textSize="10pt"
+            android:paddingLeft="4pt"
+            android:textColor="@android:color/black" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:src="@drawable/uncheckbox"
+            android:scaleType="fitXY"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="20">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="16"
+            android:layout_height="match_parent"
+            android:background="@drawable/main_textedge"
+            android:text="드론 정보 수집에 관한 약관 동의"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center_vertical"
+            android:textSize="10pt"
+            android:paddingLeft="4pt"
+            android:textColor="@android:color/black" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:src="@drawable/uncheckbox"
+            android:scaleType="fitXY"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="20">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/main_textedge"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center"
+            android:text="등록자 정보 입력 창"
+            android:textColor="@android:color/black"
+            android:textSize="12pt"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="20">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:fontFamily="@font/bmjua"
+            android:text="닉네임"
+            android:textColor="@android:color/black"
+            android:gravity="center_vertical"
+            android:paddingLeft="5pt"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="16"
+            android:background="@drawable/textedge"
+            android:hint="사용하고자 하는 닉네임 입력"
+            android:paddingLeft="5pt"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="20">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:fontFamily="@font/bmjua"
+            android:text="희망거래지역"
+            android:textColor="@android:color/black"
+            android:gravity="center_vertical"
+            android:paddingLeft="5pt"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="16"
+            android:background="@drawable/textedge"
+            android:hint="조회 하러가기(클릭)"
+            android:textSize="30dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="5pt"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="20">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:fontFamily="@font/bmjua"
+            android:text="거래계좌등록"
+            android:textColor="@android:color/black"
+            android:gravity="center_vertical"
+            android:paddingLeft="5pt"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="16"
+            android:background="@drawable/textedge"
+            android:hint="등록 하러가기(클릭)"
+            android:textSize="30dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="5pt"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.5"
+        android:fontFamily="@font/bmjua"
+        android:paddingLeft="5pt"
+        android:text="드론 조종 면허 등록\n(클릭)"
+        android:textColor="@android:color/black"
+        android:background="@android:color/holo_green_light"
+        android:textSize="10pt"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="20">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:textColor="@android:color/black"
+            android:background="@drawable/main_textedge"
+            android:fontFamily="@font/bmjua"
+            android:text="뒤로가기"
+            android:textSize="30dp"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:textColor="@android:color/black"
+            android:background="@drawable/main_textedge"
+            android:fontFamily="@font/bmjua"
+            android:text="다음"
+            android:textSize="30dp"/>
+
+    </LinearLayout>
+</LinearLayout>
