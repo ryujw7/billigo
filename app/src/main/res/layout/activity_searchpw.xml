@@ -44,9 +44,9 @@
             android:layout_height="match_parent"
             android:layout_weight="18"
             android:background="@android:color/holo_green_light"
-            android:textColor="@android:color/white"/>
-        <!--텍스트는 자바에서 출력하도록 설정-->
-
+            android:textColor="@android:color/white"
+            android:text="DB로 받아와야하는 ID 데이터"
+            android:gravity="center|center"/>
     </LinearLayout>
 
     <FrameLayout
