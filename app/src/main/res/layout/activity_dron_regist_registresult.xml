@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="15">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="1"
+            android:background="@drawable/main_textedge"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center"
+            android:text="등록자 닉네임 출력"
+            android:textColor="@android:color/black"
+            android:textSize="15pt"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@drawable/textedge"
+        android:text="희망 거래 지역에서 받았던 주소 이미지로 출력">
+
+    </ImageView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="@drawable/textedge"
+        android:text="일련번호 조회를 통해 확인한 드론 기종 사진 출력">
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="16">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="16"
+            android:layout_height="match_parent"
+            android:background="@drawable/main_textedge"
+            android:text="드론 일련번호 조회를 통해 받은 드론 기종"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center|center"
+            android:textSize="8pt"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="16">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="16"
+            android:layout_height="match_parent"
+            android:background="@drawable/main_textedge"
+            android:text="등록 가능기간 출력(계산해서)"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center|center"
+            android:textSize="8pt"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="16">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="16"
+            android:layout_height="match_parent"
+            android:background="@drawable/main_textedge"
+            android:text="(1일, 1ha 기준) 방제 금액 출력"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center|center"
+            android:textSize="8pt"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="16">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="16"
+            android:layout_height="match_parent"
+            android:background="@drawable/main_textedge"
+            android:text="희망 거래 지역 텍스트로 출력"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center|center"
+            android:textSize="8pt"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="16">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="16"
+            android:layout_height="match_parent"
+            android:background="@drawable/main_textedge"
+            android:text="드론 자격증 일련번호 출력"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center|center"
+            android:textSize="8pt"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4">
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.6"
+        android:weightSum="16">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="16"
+            android:textColor="@android:color/black"
+            android:background="@drawable/textedgrgreen"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center|center"
+            android:textSize="8pt"
+            android:text="등록 완료되었습니다."/>
+
+    </LinearLayout>
+</LinearLayout>

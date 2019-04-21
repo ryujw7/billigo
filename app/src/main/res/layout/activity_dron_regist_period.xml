@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="17">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="2">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:fontFamily="@font/bmjua"
+            android:textColor="@android:color/black"
+            android:text="[닉네임] 등록 기간 확인"
+            android:textSize="12pt"
+            android:gravity="center|center"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"></FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/textedge"
+            android:fontFamily="@font/bmjua"
+            android:textColor="@android:color/black"
+            android:gravity="center|center"
+            android:text="등록 가능 기간 조회하기(클릭)"
+            android:textSize="12pt" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/main_textedge"
+            android:fontFamily="@font/bmjua"
+            android:textColor="@android:color/black"
+            android:gravity="center|center"
+            android:text="DB로 출력하기"
+            android:textSize="12pt" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"></FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="2">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:fontFamily="@font/bmjua"
+            android:textColor="@android:color/black"
+            android:text="등록 대금 확인하기"
+            android:textSize="12pt"
+            android:gravity="center|center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/textedge"
+            android:fontFamily="@font/bmjua"
+            android:textColor="@android:color/black"
+            android:gravity="center|center"
+            android:text="1개월"
+            android:textSize="12pt" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/textedge"
+            android:fontFamily="@font/bmjua"
+            android:textColor="@android:color/black"
+            android:gravity="center|center"
+            android:text="30,000원"
+            android:textSize="12pt" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/textedge"
+            android:fontFamily="@font/bmjua"
+            android:textColor="@android:color/black"
+            android:gravity="center|center"
+            android:text="3개월"
+            android:textSize="12pt" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/textedge"
+            android:fontFamily="@font/bmjua"
+            android:textColor="@android:color/black"
+            android:gravity="center|center"
+            android:text="70,000원"
+            android:textSize="12pt" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/textedge"
+            android:fontFamily="@font/bmjua"
+            android:textColor="@android:color/black"
+            android:gravity="center|center"
+            android:text="6개월"
+            android:textSize="12pt" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/textedge"
+            android:fontFamily="@font/bmjua"
+            android:textColor="@android:color/black"
+            android:gravity="center|center"
+            android:text="100,000원"
+            android:textSize="12pt" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/textedge"
+            android:fontFamily="@font/bmjua"
+            android:textColor="@android:color/black"
+            android:gravity="center|center"
+            android:text="1년"
+            android:textSize="12pt" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/textedge"
+            android:fontFamily="@font/bmjua"
+            android:textColor="@android:color/black"
+            android:gravity="center|center"
+            android:text="180,000원"
+            android:textSize="12pt" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"></FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="2">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:fontFamily="@font/bmjua"
+            android:textColor="@android:color/black"
+            android:text="대금 결제 선택"
+            android:textSize="12pt"
+            android:gravity="center|center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="4">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/main_textedge"
+            android:fontFamily="@font/bmjua"
+            android:text="1개월"
+            android:textSize="12pt" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/bmjua"
+            android:background="@drawable/main_textedge"
+            android:text="3개월"
+            android:textSize="12pt" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/main_textedge"
+            android:fontFamily="@font/bmjua"
+            android:text="6개월"
+            android:textSize="12pt" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/bmjua"
+            android:background="@drawable/main_textedge"
+            android:text="12개월"
+            android:textSize="12pt" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|center"
+            android:text="(위에서 클릭한 개월) 선택\n결제금액"
+            android:fontFamily="@font/bmjua"
+            android:textColor="@android:color/black"
+            android:background="@drawable/textedgegreen"
+            android:textSize="14pt"
+            android:src="@drawable/dronregist_text"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:weightSum="1">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/bmjua"
+            android:textColor="@android:color/black"
+            android:background="@drawable/main_textedge"
+            android:text="결제하기"
+            android:textSize="12pt"
+            android:gravity="center|center"/>
+    </LinearLayout>
+
+</LinearLayout>
