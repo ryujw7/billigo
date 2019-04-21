@@ -46,11 +46,13 @@
             android:paddingLeft="4pt"
             android:textColor="@android:color/black" />
 
-        <ImageButton
+        <CheckBox
+            android:id="@+id/infoagree"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="4"
-            android:src="@drawable/uncheckbox"
+            android:button="@android:color/transparent"
+            android:background="@drawable/check_on_off"
             android:scaleType="fitXY"/>
     </LinearLayout>
 
@@ -71,11 +73,13 @@
             android:paddingLeft="4pt"
             android:textColor="@android:color/black" />
 
-        <ImageButton
+        <CheckBox
+            android:id="@+id/tradeagree"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="4"
-            android:src="@drawable/uncheckbox"
+            android:button="@android:color/transparent"
+            android:background="@drawable/check_on_off"
             android:scaleType="fitXY"/>
     </LinearLayout>
 
@@ -96,12 +100,14 @@
             android:paddingLeft="4pt"
             android:textColor="@android:color/black" />
 
-        <ImageButton
+        <CheckBox
+            android:id="@+id/droninfoagree"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="4"
-            android:src="@drawable/uncheckbox"
-            android:scaleType="fitXY"/>
+            android:button="@android:color/transparent"
+            android:background="@drawable/check_on_off"
+            android:scaleType="fitXY" />
     </LinearLayout>
 
     <FrameLayout
@@ -122,7 +128,7 @@
             android:background="@drawable/main_textedge"
             android:fontFamily="@font/bmjua"
             android:gravity="center"
-            android:text="등록자 정보 입력 창"
+            android:text="등록자 정보 입력"
             android:textColor="@android:color/black"
             android:textSize="12pt"/>
     </LinearLayout>
@@ -143,6 +149,7 @@
             android:paddingLeft="5pt"/>
 
         <EditText
+            android:id="@+id/registname"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="16"
@@ -168,6 +175,7 @@
             android:paddingLeft="5pt"/>
 
         <Button
+            android:id="@+id/tradelocationregbtn"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="16"
@@ -195,6 +203,7 @@
             android:paddingLeft="5pt"/>
 
         <Button
+            android:id="@+id/regaccountbtn"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="16"
@@ -206,6 +215,7 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/dronlicenseregbtn"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="4.5"
@@ -222,6 +232,7 @@
         android:layout_weight="1"
         android:weightSum="20">
         <Button
+            android:id="@+id/adrdbackbtn"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="10"
@@ -231,6 +242,7 @@
             android:text="뒤로가기"
             android:textSize="30dp"/>
         <Button
+            android:id="@+id/adrdnextbtn"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="10"

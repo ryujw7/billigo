@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="20">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:text="나도 농부님 드론 등록하기"
+        android:fontFamily="@font/bmjua"
+        android:background="@drawable/main_textedge"
+        android:textSize="15pt"
+        android:gravity="center|center"
+        android:textColor="@android:color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@drawable/textedge"
+        android:weightSum="5">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center|center"
+            android:fontFamily="@font/bmjua"
+            android:background="@drawable/textedge"
+            android:text="드론 조회 약관"
+            android:textSize="13pt"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="동의"
+            android:gravity="center|center"
+            android:fontFamily="@font/bmjua"
+            android:textSize="13pt"
+            android:textColor="@android:color/black"/>
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/check_on_off"
+            android:button="@android:color/transparent"
+            android:layout_marginTop="1pt"
+            android:layout_marginBottom="1pt"
+            android:scaleType="fitXY"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></FrameLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:text="드론 등록번호\n변경 및 조회하기(클릭)"
+        android:fontFamily="@font/bmjua"
+        android:gravity="center|center"
+        android:background="@drawable/textedgegreen"
+        android:textSize="16pt"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@drawable/textedge"
+        android:fontFamily="@font/bmjua"
+        android:gravity="center|center"
+        android:hint="조회 후 DB로 출력"
+        android:textColor="@android:color/black"
+        android:textSize="13pt" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:text="등록자 가격 설정"
+        android:fontFamily="@font/bmjua"
+        android:textSize="13pt"
+        android:gravity="center|center"
+        android:background="@drawable/textedge"
+        android:textColor="@android:color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="4">
+        <Button
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="1일"
+            android:textSize="13pt"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center|center"
+            android:background="@drawable/textedge"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/textedge"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center|center"
+            android:text="1ha"
+            android:textSize="13pt" />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:hint="가격 입력"
+            android:textSize="13pt"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center|center"
+            android:textColor="@android:color/black"
+            android:background="@drawable/textedge"/>
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:text="등록자 기간 확인(연장)하기(클릭)"
+        android:fontFamily="@font/bmjua"
+        android:gravity="center|center"
+        android:background="@drawable/textedge"
+        android:textSize="12pt"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:text="사진 등록\n(선택 사항)"
+        android:background="@drawable/textedgegreen"
+        android:fontFamily="@font/bmjua"
+        android:gravity="center|center"
+        android:textSize="12pt"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/adrdbackbtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:textColor="@android:color/black"
+            android:background="@drawable/main_textedge"
+            android:fontFamily="@font/bmjua"
+            android:text="뒤로가기"
+            android:textSize="30dp"/>
+        <Button
+            android:id="@+id/adrdnextbtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:textColor="@android:color/black"
+            android:background="@drawable/main_textedge"
+            android:fontFamily="@font/bmjua"
+            android:text="다음"
+            android:textSize="30dp"/>
+
+    </LinearLayout>
+</LinearLayout>

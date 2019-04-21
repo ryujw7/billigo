@@ -24,8 +24,11 @@
         <activity android:name=".SearchpwActivity"/>
         <activity android:name=".DronRegistMainActivity"/>
         <activity android:name=".DronRequestChaddrActivity"/>
-
-
+        <activity android:name=".DronRegistFirstRegistActivity"/>
+        <activity android:name=".DronRegistRegAccountActivity"/>
+        <activity android:name=".DronRegistDronLicenseActivity"/>
+        <activity android:name=".DronRegistTradeAddrActivity"/>
+        <activity android:name=".DronRegistDronActivity"/>
     </application>
 
 </manifest>
