@@ -28,6 +28,7 @@
         <activity android:name=".DronRegistRegAccountActivity"/>
         <activity android:name=".DronRegistDronLicenseActivity"/>
         <activity android:name=".DronRegistTradeAddrActivity"/>
+        <activity android:name=".DronRegistDronActivity"/>
     </application>
 
 </manifest>

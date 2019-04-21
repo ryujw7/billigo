@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="22"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:weightSum="22">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,13 +19,14 @@
             android:gravity="center"
             android:text="거래 계좌 등록"
             android:textColor="@android:color/black"
-            android:textSize="12pt"/>
+            android:textSize="12pt" />
     </LinearLayout>
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"></FrameLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -42,28 +42,31 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="8"
-            android:weightSum="2"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:weightSum="2">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/bmjua"
-                android:text="예금주"
-                android:textColor="@android:color/black"
                 android:gravity="center_vertical"
-                android:paddingLeft="5pt"/>
-            
+                android:paddingLeft="5pt"
+                android:text="예금주"
+                android:textColor="@android:color/black" />
+
             <EditText
+                android:id="@+id/adrraccname"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:background="@drawable/textedge"
                 android:hint="계좌 개설 당시의 명의를 입력해주세요"
-                android:paddingLeft="5pt"/>
+                android:paddingLeft="5pt" />
         </LinearLayout>
-        
+
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -79,28 +82,31 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="8"
-            android:weightSum="2"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:weightSum="2">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/bmjua"
-                android:text="은행"
-                android:textColor="@android:color/black"
                 android:gravity="center_vertical"
-                android:paddingLeft="5pt"/>
+                android:paddingLeft="5pt"
+                android:text="은행"
+                android:textColor="@android:color/black" />
 
-            <EditText
+            <ListView
+                android:id="@+id/adrraccbank"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:background="@drawable/textedge"
                 android:hint="해당 계좌 개설 은행"
-                android:paddingLeft="5pt"/>
+                android:paddingLeft="5pt" />
         </LinearLayout>
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -116,25 +122,28 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="8"
-            android:weightSum="2"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:weightSum="2">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/bmjua"
-                android:text="계좌번호"
-                android:textColor="@android:color/black"
                 android:gravity="center_vertical"
-                android:paddingLeft="5pt"/>
+                android:paddingLeft="5pt"
+                android:text="계좌번호"
+                android:textColor="@android:color/black" />
 
             <EditText
+                android:id="@+id/adrraccnumber"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:background="@drawable/textedge"
                 android:hint="계좌번호 입력(-없이 입력하여 주세요)"
-                android:paddingLeft="5pt"/>
+                android:textSize="6pt"
+                android:paddingLeft="5pt" />
         </LinearLayout>
 
     </LinearLayout>
@@ -154,72 +163,117 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="8"
-            android:weightSum="2"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:weightSum="2">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/bmjua"
-                android:text="본인 인증"
-                android:textColor="@android:color/black"
                 android:gravity="center_vertical"
-                android:paddingLeft="5pt"/>
+                android:paddingLeft="5pt"
+                android:text="본인 인증"
+                android:textColor="@android:color/black" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:weightSum="12">
-            <EditText
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="7.5"
-                android:background="@drawable/textedge"
-                android:hint="휴대폰 번호 입력"
-                android:paddingLeft="5pt" />
 
-            <FrameLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.5"></FrameLayout>
+                <EditText
+                    android:id="@+id/adrrphonenum"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7.5"
+                    android:background="@drawable/textedge"
+                    android:hint="휴대폰 번호 입력(-빼고 입력)"
+                    android:textSize="6pt"
+                    android:paddingLeft="5pt" />
 
-            <Button
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="4"
-                android:background="@drawable/textedge"
-                android:fontFamily="@font/bmjua"
-                android:text="조회"
-                android:gravity="center|center"
-                android:textColor="@android:color/black"/>
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"></FrameLayout>
+
+                <Button
+                    android:id="@+id/adrrfindbtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:background="@drawable/textedgegreen"
+                    android:fontFamily="@font/bmjua"
+                    android:gravity="center|center"
+                    android:text="인증번호 전송"
+                    android:textColor="@android:color/black"
+                    android:textSize="8pt"/>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.5"></FrameLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="2"
         android:weightSum="10">
-        
+
         <FrameLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"></FrameLayout>
 
-        <EditText
+        <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="8"
-            android:hint="인증번호 6자리를 입력하여 주세요."
-            android:background="@drawable/textedge"
-            android:paddingLeft="5pt"/>
+            android:orientation="vertical"
+            android:weightSum="2">
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/bmjua"
+                android:gravity="center_vertical"
+                android:paddingLeft="5pt"
+                android:text="인증 번호"
+                android:textColor="@android:color/black" />
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="12">
+
+                <EditText
+                    android:id="@+id/adrrcertnum"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7.5"
+                    android:background="@drawable/textedge"
+                    android:hint="인증번호 6자리 입력"
+                    android:textSize="6pt"
+                    android:paddingLeft="5pt" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"></FrameLayout>
+
+                <Button
+                    android:id="@+id/addrcertbtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:background="@drawable/textedgegreen"
+                    android:fontFamily="@font/bmjua"
+                    android:gravity="center|center"
+                    android:text="인증하기"
+                    android:textSize="8pt"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+        </LinearLayout>
     </LinearLayout>
 
     <FrameLayout
@@ -232,35 +286,37 @@
         android:layout_height="0dp"
         android:layout_weight="8"
         android:background="@android:color/holo_green_light"
-        android:textColor="@android:color/black"
         android:fontFamily="@font/bmjua"
-        android:textSize="15pt"
+        android:gravity="center|center"
         android:text="본인 명의 계좌 확인되었습니다.(체크 후 DB로 결과 출력)"
-        android:gravity="center|center"/>
+        android:textColor="@android:color/black"
+        android:textSize="15pt" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
         android:weightSum="20">
+
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="10"
-            android:textColor="@android:color/black"
             android:background="@drawable/main_textedge"
             android:fontFamily="@font/bmjua"
             android:text="뒤로가기"
-            android:textSize="30dp"/>
+            android:textColor="@android:color/black"
+            android:textSize="30dp" />
+
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="10"
-            android:textColor="@android:color/black"
             android:background="@drawable/main_textedge"
             android:fontFamily="@font/bmjua"
             android:text="등록완료"
-            android:textSize="30dp"/>
+            android:textColor="@android:color/black"
+            android:textSize="30dp" />
 
     </LinearLayout>
 

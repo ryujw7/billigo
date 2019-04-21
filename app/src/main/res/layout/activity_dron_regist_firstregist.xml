@@ -232,7 +232,7 @@
         android:layout_weight="1"
         android:weightSum="20">
         <Button
-            android:id="@+id/backbtn"
+            android:id="@+id/adrdbackbtn"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="10"
@@ -242,7 +242,7 @@
             android:text="뒤로가기"
             android:textSize="30dp"/>
         <Button
-            android:id="@+id/nextbtn"
+            android:id="@+id/adrdnextbtn"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="10"

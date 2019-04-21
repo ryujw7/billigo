@@ -1,10 +1,8 @@
 package com.example.billigo;
 
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -39,15 +37,14 @@ public class DronRegistFirstRegistActivity extends BaseActivity {
                 overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             }
         });
-        findViewById(R.id.nextbtn).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.adrdnextbtn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(checkBox1.isChecked() && checkBox2.isChecked() && checkBox3.isChecked()) {
                         if (editText.getText().toString().length() == 0) {
                             Toast.makeText(DronRegistFirstRegistActivity.this, "닉네임을 적어주세요.", Toast.LENGTH_SHORT).show();
                         } else {
-                            finish();
-                            //startActivity(new Intent(DronRegistFirstRegistActivity.this, DronRegistRegAccountActivity.class));
+                            startActivity(new Intent(DronRegistFirstRegistActivity.this, DronRegistDronActivity.class));
                             overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                         }
                 } else {
@@ -55,7 +52,7 @@ public class DronRegistFirstRegistActivity extends BaseActivity {
                 }
             }
         });
-        findViewById(R.id.backbtn).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.adrdbackbtn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
