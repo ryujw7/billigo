@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="13">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.4"
+            android:weightSum="1"
+            android:background="@drawable/textedge"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center"
+            android:text="닉네임(자바로)"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="15pt"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:weightSum="1"
+            android:gravity="center"
+            android:text="신청(자바로)"
+            android:textColor="@android:color/black"
+            android:textSize="10pt"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.2"
+        android:background="@drawable/textedge"
+        android:text="희망 거래 지역에서 받았던 주소 이미지로 출력">
+
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:weightSum="16">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:layout_height="match_parent"
+            android:background="@drawable/main_textedge"
+            android:text="평점 : (DB, 계산)"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center|center"
+            android:textSize="8pt"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:layout_height="match_parent"
+            android:background="@drawable/main_textedge"
+            android:text="리뷰 : (DB, 카운팅)"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center|center"
+            android:textSize="8pt"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="16">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="16"
+            android:layout_height="match_parent"
+            android:background="@drawable/main_textedge"
+            android:text="등록된 드론 기종(자바)"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center|center"
+            android:textSize="10pt"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="16">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="16"
+            android:layout_height="match_parent"
+            android:background="@drawable/main_textedge"
+            android:text="안심번호 전화하기"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center|center"
+            android:textSize="10pt"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="16">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="16"
+            android:layout_height="match_parent"
+            android:background="@drawable/main_textedge"
+            android:text="1일 / 1ha 기준 가격"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center|center"
+            android:textSize="10pt"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="16">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="16"
+            android:layout_height="match_parent"
+            android:background="@drawable/main_textedge"
+            android:text="신청자와의 거리 detecting(최단거리 알고리즘)"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center|center"
+            android:textSize="8pt"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="16">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="16"
+            android:layout_height="match_parent"
+            android:background="@drawable/main_textedge"
+            android:text="[닉네임] 자세히 확인하기(클릭) "
+            android:fontFamily="@font/bmjua"
+            android:gravity="center|center"
+            android:textSize="8pt"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="16">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:textColor="@android:color/black"
+            android:background="@drawable/main_textedge"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center|center"
+            android:textSize="14pt"
+            android:text="뒤로가기"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:textColor="@android:color/black"
+            android:background="@drawable/main_textedge"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center|center"
+            android:textSize="14pt"
+            android:text="신청하기"/>
+    </LinearLayout>
+</LinearLayout>
