@@ -152,73 +152,119 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="8"
-            android:weightSum="2"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:weightSum="2">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/bmjua"
-                android:text="본인 인증"
-                android:textColor="@android:color/black"
                 android:gravity="center_vertical"
-                android:paddingLeft="5pt"/>
+                android:paddingLeft="5pt"
+                android:text="본인 인증"
+                android:textColor="@android:color/black" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:weightSum="12">
-            <EditText
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="7.5"
-                android:background="@drawable/textedge"
-                android:hint="휴대폰 번호 입력"
-                android:paddingLeft="5pt" />
 
-            <FrameLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.5"></FrameLayout>
+                <EditText
+                    android:id="@+id/adrrphonenum"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7.5"
+                    android:background="@drawable/textedge"
+                    android:hint="휴대폰 번호 입력(-빼고 입력)"
+                    android:textSize="6pt"
+                    android:paddingLeft="5pt" />
 
-            <Button
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="4"
-                android:background="@drawable/textedge"
-                android:fontFamily="@font/bmjua"
-                android:text="조회"
-                android:gravity="center|center"
-                android:textColor="@android:color/black"/>
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"></FrameLayout>
+
+                <Button
+                    android:id="@+id/adrrfindbtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:background="@drawable/textedgegreen"
+                    android:fontFamily="@font/bmjua"
+                    android:gravity="center|center"
+                    android:text="인증번호 전송"
+                    android:textColor="@android:color/black"
+                    android:textSize="8pt"/>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.5"></FrameLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="2"
         android:weightSum="10">
-        
+
         <FrameLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"></FrameLayout>
 
-        <EditText
+        <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="8"
-            android:hint="인증번호 6자리를 입력하여 주세요."
-            android:background="@drawable/textedge"
-            android:paddingLeft="5pt"/>
+            android:orientation="vertical"
+            android:weightSum="2">
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/bmjua"
+                android:gravity="center_vertical"
+                android:paddingLeft="5pt"
+                android:text="인증 번호"
+                android:textColor="@android:color/black" />
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="12">
+
+                <EditText
+                    android:id="@+id/adrrcertnum"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7.5"
+                    android:background="@drawable/textedge"
+                    android:hint="인증번호 6자리 입력"
+                    android:textSize="6pt"
+                    android:paddingLeft="5pt" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"></FrameLayout>
+
+                <Button
+                    android:id="@+id/addrcertbtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:background="@drawable/textedgegreen"
+                    android:fontFamily="@font/bmjua"
+                    android:gravity="center|center"
+                    android:text="인증하기"
+                    android:textSize="8pt"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+        </LinearLayout>
     </LinearLayout>
+
 
     <FrameLayout
         android:layout_width="match_parent"
