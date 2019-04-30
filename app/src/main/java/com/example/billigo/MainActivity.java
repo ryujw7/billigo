@@ -48,6 +48,7 @@ public class MainActivity extends BaseActivity {
                     case R.id.login:
                         startActivity(new Intent(MainActivity.this,HomeActivity.class));
                         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+                        finish();
                         break;
                     case R.id.homepage:
                         Intent intent = new Intent(Intent.ACTION_VIEW);
