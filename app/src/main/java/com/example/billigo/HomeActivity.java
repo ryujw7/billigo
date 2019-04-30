@@ -16,9 +16,10 @@ public class HomeActivity extends BaseActivity {
         findViewById(R.id.loginbutton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(HomeActivity.this, MainActivity.class));
-                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 finish();
+                /*
+                startActivity(new Intent(HomeActivity.this, MainActivity.class));
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);*/
             }
         });
         findViewById(R.id.registerbuton).setOnClickListener(new View.OnClickListener() {
@@ -26,6 +27,7 @@ public class HomeActivity extends BaseActivity {
             public void onClick(View v) {
                 startActivity(new Intent(HomeActivity.this, RegisterActivity.class));
                 overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+                finish();
             }
         });
         findViewById(R.id.searchaccount).setOnClickListener(new View.OnClickListener() {
@@ -33,6 +35,7 @@ public class HomeActivity extends BaseActivity {
             public void onClick(View v) {
                 startActivity(new Intent(HomeActivity.this, SearchidActivity.class));
                 overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+                finish();
             }
         });
     }

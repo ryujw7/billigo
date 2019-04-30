@@ -18,8 +18,7 @@ public class DronRegistDronActivity extends BaseActivity {
         findViewById(R.id.adrdnextbtn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //startActivity(new Intent(DronRegistDronActivity.this, DronRegistDronLicenseActivity.class));
-                finish();
+                startActivity(new Intent(DronRegistDronActivity.this, DronRegistPeriodActivity.class));
                 overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             }
         });

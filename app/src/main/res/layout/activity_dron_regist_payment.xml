@@ -1,6 +1,388 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="50">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:weightSum="10">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="@drawable/textedge"
+            android:fontFamily="@font/bmjua"
+            android:text="뒤로가기"
+            android:textSize="10pt" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:weightSum="30">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></FrameLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="28"
+            android:background="@drawable/textedge"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center"
+            android:hint="선택한 기간 출력"
+            android:textSize="10pt" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:weightSum="30">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></FrameLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="28"
+            android:background="@drawable/textedge"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center"
+            android:hint="기간 적용된 만료일 출력"
+            android:textSize="10pt" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"></FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:weightSum="30">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></FrameLayout>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="28"
+            android:background="@drawable/textedge"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center"
+            android:text="결제금액"
+            android:textColor="@android:color/black"
+            android:textSize="10pt" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:weightSum="30">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></FrameLayout>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="28"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center"
+            android:hint="결제 금액 출력"
+            android:textColor="@android:color/black"
+            android:textSize="10pt" />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:weightSum="30">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="28"
+            android:background="@drawable/textedge"
+            android:orientation="horizontal"
+            android:weightSum="20">
+
+            <TextView
+                android:id="@+id/adrp_payment"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="16"
+                android:fontFamily="@font/bmjua"
+                android:gravity="center"
+                android:hint="결제 수단 출력"
+                android:textColor="@android:color/black"
+                android:textSize="10pt" />
+
+            <Button
+                android:id="@+id/adrp_chgpayment"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/bmjua"
+                android:text="변경"
+                android:textColor="@android:color/holo_green_light"
+                android:textSize="10pt" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:weightSum="30">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="28"
+            android:background="@drawable/textedge"
+            android:orientation="horizontal"
+            android:weightSum="20">
+
+            <TextView
+                android:id="@+id/adrp_payment_con"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="16"
+                android:fontFamily="@font/bmjua"
+                android:gravity="center"
+                android:hint="결제 수단 별 세부 목록 출력"
+                android:textColor="@android:color/black"
+                android:textSize="10pt" />
+
+            <Button
+                android:id="@+id/adrp_chgpayment_con"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/bmjua"
+                android:text="변경"
+                android:textColor="@android:color/holo_green_light"
+                android:textSize="10pt" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:weightSum="20">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></FrameLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="18"
+            android:fontFamily="@font/bmjua"
+            android:text="카드결제의 경우 자동으로 현금영수증 처리 됩니다."
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="7pt" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:weightSum="30">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="28"
+            android:background="@drawable/textedge"
+            android:orientation="horizontal"
+            android:weightSum="20">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="16"
+                android:fontFamily="@font/bmjua"
+                android:gravity="left|center"
+                android:paddingLeft="5pt"
+                android:text="회원등급(우수회원 1% 감면)"
+                android:textColor="@android:color/black"
+                android:textSize="10pt" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/bmjua"
+                android:gravity="center"
+                android:hint="회원등급"
+                android:textColor="@android:color/holo_green_light"
+                android:textSize="8pt" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:weightSum="30">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="28"
+            android:background="@drawable/textedge"
+            android:orientation="horizontal"
+            android:weightSum="20">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="16"
+                android:fontFamily="@font/bmjua"
+                android:gravity="left|center"
+                android:paddingLeft="5pt"
+                android:text="빌리고 포인트"
+                android:textColor="@android:color/black"
+                android:textSize="10pt" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/bmjua"
+                android:gravity="center"
+                android:hint="포인트"
+                android:textColor="@android:color/holo_green_light"
+                android:textSize="10pt" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:weightSum="30">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></FrameLayout>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="28"
+            android:background="@drawable/textedge"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center"
+            android:text="약관확인\n\n본인이 만 14세 이상이고 위 내용을 확인하였으며\n결제를 동의합니다"
+            android:textColor="@android:color/black"
+            android:textSize="8pt" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></FrameLayout>
+    <Button
+        android:id="@+id/adrp_pay"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="@drawable/textedgegreen"
+        android:text="결제하기"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/bmjua"
+        android:textSize="20pt"/>
+
+
+</LinearLayout>
