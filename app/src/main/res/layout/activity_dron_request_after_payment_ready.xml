@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/textedge"
+    android:weightSum="20">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.4"
+        android:weightSum="10">
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4">
+        </FrameLayout>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="match_parent"
+            android:text="잠시만 기다려주세요."
+            android:fontFamily="@font/bmjua"
+            android:background="@drawable/textedge"
+            android:gravity="center_vertical"
+            android:paddingLeft="4pt"
+            android:textSize="12pt"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:weightSum="10">
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4">
+        </FrameLayout>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="match_parent"
+            android:text="등록자 방제 가능 여부 확인 중입니다."
+            android:fontFamily="@font/bmjua"
+            android:gravity="center_vertical"
+            android:paddingLeft="4pt"
+            android:textSize="8pt"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.8"
+        android:weightSum="10">
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4">
+        </FrameLayout>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="match_parent"
+            android:text="방제 취소하는 경우 결제 금액은\n해당 카드로 반환됩니다."
+            android:fontFamily="@font/bmjua"
+            android:gravity="center_vertical"
+            android:background="@drawable/textedge"
+            android:paddingLeft="4pt"
+            android:textSize="10pt"
+            android:textColor="@android:color/darker_gray" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="10"
+        android:src="@drawable/believe_image" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.3"
+        android:weightSum="10">
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2">
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.9"
+            android:background="@drawable/textedge"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center||center"
+            android:text="경기도"
+            android:textColor="@android:color/black"
+            android:textSize="8pt" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5.7"
+            android:background="@drawable/textedge"
+            android:fontFamily="@font/bmjua"
+            android:gravity="right"
+            android:paddingLeft="3pt"
+            android:text="닉네임: (DB)\n평점 (DB) 리뷰 (DB)"
+            android:textColor="@android:color/black"
+            android:textSize="8pt" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.3"
+        android:weightSum="10">
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2">
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.9"
+            android:background="@drawable/textedge"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center||center"
+            android:text="강원도"
+            android:textColor="@android:color/black"
+            android:textSize="8pt" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5.7"
+            android:background="@drawable/textedge"
+            android:fontFamily="@font/bmjua"
+            android:gravity="right"
+            android:paddingLeft="3pt"
+            android:text="닉네임: (DB)\n평점 (DB) 리뷰 (DB)"
+            android:textColor="@android:color/black"
+            android:textSize="8pt" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.3"
+        android:weightSum="10">
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2">
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.9"
+            android:background="@drawable/textedge"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center||center"
+            android:text="충청도"
+            android:textColor="@android:color/black"
+            android:textSize="8pt" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5.7"
+            android:background="@drawable/textedge"
+            android:fontFamily="@font/bmjua"
+            android:gravity="right"
+            android:paddingLeft="3pt"
+            android:text="닉네임: (DB)\n평점 (DB) 리뷰 (DB)"
+            android:textColor="@android:color/black"
+            android:textSize="8pt" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.3"
+        android:weightSum="10">
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2">
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.9"
+            android:background="@drawable/textedge"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center||center"
+            android:text="경상북도"
+            android:textColor="@android:color/black"
+            android:textSize="8pt" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5.7"
+            android:background="@drawable/textedge"
+            android:fontFamily="@font/bmjua"
+            android:gravity="right"
+            android:paddingLeft="3pt"
+            android:text="닉네임: (DB)\n평점 (DB) 리뷰 (DB)"
+            android:textColor="@android:color/black"
+            android:textSize="8pt" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.3"
+        android:weightSum="10">
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2">
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.9"
+            android:background="@drawable/textedge"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center||center"
+            android:text="경상남도"
+            android:textColor="@android:color/black"
+            android:textSize="8pt" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5.7"
+            android:background="@drawable/textedge"
+            android:fontFamily="@font/bmjua"
+            android:gravity="right"
+            android:paddingLeft="3pt"
+            android:text="닉네임: (DB)\n평점 (DB) 리뷰 (DB)"
+            android:textColor="@android:color/black"
+            android:textSize="8pt" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.3"
+        android:weightSum="10">
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2">
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.9"
+            android:background="@drawable/textedge"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center||center"
+            android:text="전라북도"
+            android:textColor="@android:color/black"
+            android:textSize="8pt" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5.7"
+            android:background="@drawable/textedge"
+            android:fontFamily="@font/bmjua"
+            android:gravity="right"
+            android:paddingLeft="3pt"
+            android:text="닉네임: (DB)\n평점 (DB) 리뷰 (DB)"
+            android:textColor="@android:color/black"
+            android:textSize="8pt" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.3"
+        android:weightSum="10">
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2">
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.9"
+            android:background="@drawable/textedge"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center||center"
+            android:text="전라남도"
+            android:textColor="@android:color/black"
+            android:textSize="8pt" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5.7"
+            android:background="@drawable/textedge"
+            android:fontFamily="@font/bmjua"
+            android:gravity="right"
+            android:paddingLeft="3pt"
+            android:text="닉네임: (DB)\n평점 (DB) 리뷰 (DB)"
+            android:textColor="@android:color/black"
+            android:textSize="8pt" />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:weightSum="10">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"></FrameLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7.6"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center||center"
+            android:text="조금만 기다려주세요!"
+            android:textColor="@android:color/white"
+            android:textSize="11pt" />
+
+    </LinearLayout>
+</LinearLayout>
