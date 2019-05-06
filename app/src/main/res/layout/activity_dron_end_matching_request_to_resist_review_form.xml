@@ -94,7 +94,7 @@
             android:layout_weight="8"
             android:fontFamily="@font/bmjua"
             android:gravity="center|center"
-            android:text="리뷰 작성하기"
+            android:text="리뷰 작성"
             android:paddingLeft="4dp"
             android:textColor="@android:color/black"
             android:background="@drawable/textedge"
