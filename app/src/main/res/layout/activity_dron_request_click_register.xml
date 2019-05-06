@@ -60,7 +60,7 @@
             android:textSize="8pt"
             android:textColor="@android:color/black" />
 
-        <TextView
+        <Button
             android:layout_width="0dp"
             android:layout_weight="8"
             android:layout_height="match_parent"

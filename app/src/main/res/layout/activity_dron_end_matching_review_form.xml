@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_textedge"
+    android:weightSum="10">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:weightSum="10">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></FrameLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center|center"
+            android:paddingLeft="4dp"
+            android:text="등록자(DB)에 대한 작성자(DB)의 소중한 의견"
+            android:textColor="@android:color/black"
+            android:background="@drawable/textedge"
+            android:textSize="6pt"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.05">
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="10">
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:src="@drawable/review_icon"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center|center"
+            android:text="오늘도 리뷰 작성 감사합니다"
+            android:paddingLeft="4dp"
+            android:textColor="@android:color/black"
+            android:textSize="8pt"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25">
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:weightSum="10">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center|center"
+            android:text="리뷰 작성하기"
+            android:paddingLeft="4dp"
+            android:textColor="@android:color/black"
+            android:background="@drawable/textedge"
+            android:textSize="11pt" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.05">
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:weightSum="10">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center_vertical"
+            android:paddingLeft="4dp"
+            android:text="작성자"
+            android:background="@android:color/holo_orange_light"
+            android:textColor="@android:color/white"
+            android:textSize="8pt" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center_vertical"
+            android:paddingLeft="4dp"
+            android:text="DB로 받아와야 됨"
+            android:background="@drawable/textedge"
+            android:textColor="@android:color/black"
+            android:textSize="8pt" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.05">
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:weightSum="10">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center_vertical"
+            android:paddingLeft="4dp"
+            android:text="평점"
+            android:background="@android:color/holo_orange_light"
+            android:textColor="@android:color/white"
+            android:textSize="8pt" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center_vertical"
+            android:paddingLeft="4dp"
+            android:text="5.0만점에 "
+            android:background="@android:color/white"
+            android:textColor="@android:color/black"
+            android:textSize="6pt" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3.25"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center|center"
+            android:paddingLeft="4dp"
+            android:text="(  클릭  ) "
+            android:background="@drawable/textedge"
+            android:textColor="@android:color/black"
+            android:textSize="8pt" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center|center"
+            android:paddingLeft="4dp"
+            android:text="점"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black"
+            android:textSize="8pt" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.05">
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:weightSum="10">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center_vertical"
+            android:paddingLeft="4dp"
+            android:text="간단 요약"
+            android:background="@android:color/holo_orange_light"
+            android:textColor="@android:color/white"
+            android:textSize="8pt" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center_vertical"
+            android:paddingLeft="4dp"
+            android:text="예) 친절해서 좋았어요                  (클릭해서 입력하기)"
+            android:background="@drawable/textedge"
+            android:textColor="@android:color/black"
+            android:textSize="8pt" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.05">
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:weightSum="10">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:src="@drawable/textedge"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25">
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="10">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+        </FrameLayout>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center|center"
+            android:paddingLeft="4dp"
+            android:text="작성 완료 클릭"
+            android:background="@android:color/holo_orange_light"
+            android:textColor="@android:color/white"
+            android:textSize="10pt" />
+    </LinearLayout>
+
+</LinearLayout>
