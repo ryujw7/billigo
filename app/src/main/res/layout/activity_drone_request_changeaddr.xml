@@ -90,10 +90,6 @@
 
     </LinearLayout>
 
-<<<<<<< HEAD
-
-=======
->>>>>>> df79792acd24e90a6507f7a67cae07ac0ce1a316
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"

@@ -28,14 +28,9 @@
             android:layout_height="match_parent"
             android:layout_weight="5"
             android:fontFamily="@font/bmjua"
-<<<<<<< HEAD
-            android:gravity="center|center"
-            android:text="대한민국 농업을 살리겠습니다!"
-=======
+            android:text="대한민국 농업을\n살리겠습니다!"
             android:gravity="center_vertical"
->>>>>>> df79792acd24e90a6507f7a67cae07ac0ce1a316
             android:paddingLeft="4dp"
-            android:text="빌리고와 함께            농약 뿌리기"
             android:textColor="@android:color/holo_green_light"
             android:textSize="12pt" />
 
@@ -117,13 +112,8 @@
             android:layout_height="match_parent"
             android:layout_weight="8"
             android:fontFamily="@font/bmjua"
-<<<<<<< HEAD
             android:gravity="center|center"
-            android:text="확인 완료"
-=======
-            android:gravity="center||center"
             android:text="완료"
->>>>>>> df79792acd24e90a6507f7a67cae07ac0ce1a316
             android:textColor="@android:color/white"
             android:background="@android:color/holo_green_light"
             android:textSize="14pt" />

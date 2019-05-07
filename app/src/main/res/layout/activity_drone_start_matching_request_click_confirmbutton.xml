@@ -28,15 +28,11 @@
             android:layout_height="match_parent"
             android:layout_weight="6"
             android:fontFamily="@font/bmjua"
-<<<<<<< HEAD:app/src/main/res/layout/activity_drone_start_matching_request_click_confirmbutton.xml
             android:gravity="center_vertical"
             android:paddingLeft="10dp"
-=======
-            android:gravity="center|center"
->>>>>>> 87046d3f07897b3ac6a9aedb8651ce14780ff6df:app/src/main/res/layout/activity_dron_start_matching_request_click_confirmbutton.xml
             android:text="대한민국 No.1 방제 플랫폼 빌리고"
             android:textColor="@android:color/black"
-            android:textSize="7pt" />
+            android:textSize="8pt" />
 
         <ImageView
             android:layout_width="0dp"
@@ -60,17 +56,14 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="8"
-<<<<<<< HEAD:app/src/main/res/layout/activity_drone_start_matching_request_click_confirmbutton.xml
-            android:src="@drawable/pesticide0" />
-=======
+            android:src="@drawable/pesticide0"
             android:fontFamily="@font/bmjua"
-            android:gravity="center|center"
+            android:gravity="center_vertical"
             android:paddingLeft="4dp"
             android:text="등록자(DB)님의 방제가 시작되었습니다"
             android:textColor="@android:color/black"
-            android:background="@android:color/darker_gray"
+            android:background="@android:color/transparent"
             android:textSize="9pt"/>
->>>>>>> 87046d3f07897b3ac6a9aedb8651ce14780ff6df:app/src/main/res/layout/activity_dron_start_matching_request_click_confirmbutton.xml
     </LinearLayout>
 
     <FrameLayout

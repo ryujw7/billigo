@@ -284,8 +284,7 @@
             android:fontFamily="@font/bmjua"
             android:textColor="@android:color/black"
             android:background="@drawable/textedgegreen"
-            android:textSize="14pt"
-            android:src="@drawable/dronregist_text"></TextView>
+            android:textSize="14pt"/>
     </LinearLayout>
 
     <LinearLayout

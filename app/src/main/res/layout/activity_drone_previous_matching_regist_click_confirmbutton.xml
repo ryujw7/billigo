@@ -34,15 +34,9 @@
             android:layout_height="match_parent"
             android:layout_weight="6"
             android:fontFamily="@font/bmjua"
-<<<<<<< HEAD:app/src/main/res/layout/activity_drone_previous_matching_regist_click_confirmbutton.xml
             android:gravity="center_vertical"
-            android:paddingLeft="10dp"
-            android:text="방제 요청자에                    대한 정보입니다"
-=======
-            android:gravity="center|center"
             android:paddingLeft="4dp"
             android:text="방제 요청자에 대한 정보입니다"
->>>>>>> 87046d3f07897b3ac6a9aedb8651ce14780ff6df:app/src/main/res/layout/activity_dron_previous_matching_regist_click_confirmbutton.xml
             android:textColor="@android:color/black"
             android:textSize="13pt" />
     </LinearLayout>
