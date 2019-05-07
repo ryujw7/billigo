@@ -177,6 +177,11 @@
             android:layout_height="match_parent"
             android:layout_weight="4"
             android:fontFamily="@font/bmjua"
+<<<<<<< HEAD:app/src/main/res/layout/activity_dron_regist_firstregist.xml
+=======
+            android:text="희망            거래지역"
+            android:textColor="@android:color/black"
+>>>>>>> 7a450b541a074ec6dff834897177ed2b5876e6b5:app/src/main/res/layout/activity_drone_regist_firstregist.xml
             android:gravity="center_vertical"
             android:paddingLeft="5pt"
             android:text="희망\n거래지역"
@@ -207,6 +212,11 @@
             android:layout_height="match_parent"
             android:layout_weight="4"
             android:fontFamily="@font/bmjua"
+<<<<<<< HEAD:app/src/main/res/layout/activity_dron_regist_firstregist.xml
+=======
+            android:text="거래            계좌등록"
+            android:textColor="@android:color/black"
+>>>>>>> 7a450b541a074ec6dff834897177ed2b5876e6b5:app/src/main/res/layout/activity_drone_regist_firstregist.xml
             android:gravity="center_vertical"
             android:paddingLeft="5pt"
             android:text="거래\n계좌등록"

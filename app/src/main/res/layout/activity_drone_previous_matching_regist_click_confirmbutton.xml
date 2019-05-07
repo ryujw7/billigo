@@ -9,7 +9,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.75">
+        android:layout_weight="0.5">
     </FrameLayout>
 
     <LinearLayout
@@ -23,23 +23,34 @@
             android:layout_weight="1">
         </FrameLayout>
 
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:src="@drawable/request_information"/>
+
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="8"
+            android:layout_weight="6"
             android:fontFamily="@font/bmjua"
+<<<<<<< HEAD:app/src/main/res/layout/activity_drone_previous_matching_regist_click_confirmbutton.xml
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="방제 요청자에                    대한 정보입니다"
+=======
             android:gravity="center|center"
             android:paddingLeft="4dp"
             android:text="방제 요청자에 대한 정보입니다"
+>>>>>>> 87046d3f07897b3ac6a9aedb8651ce14780ff6df:app/src/main/res/layout/activity_dron_previous_matching_regist_click_confirmbutton.xml
             android:textColor="@android:color/black"
-            android:background="@drawable/main_textedge"
-            android:textSize="10pt" />
+            android:textSize="13pt" />
     </LinearLayout>
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.5">
+        android:layout_weight="0.25">
     </FrameLayout>
 
     <LinearLayout
@@ -82,7 +93,7 @@
             android:fontFamily="@font/bmjua"
             android:gravity="center_vertical"
             android:paddingLeft="4dp"
-            android:text="닉네임(DB로 출력)"
+            android:text="(DB로 출력)"
             android:textColor="@android:color/black"
             android:background="@android:color/darker_gray"
             android:textSize="10pt" />
@@ -128,7 +139,7 @@
             android:fontFamily="@font/bmjua"
             android:gravity="center_vertical"
             android:paddingLeft="4dp"
-            android:text="결제정보 출력(DB로 출력)"
+            android:text="(DB로 출력)"
             android:textColor="@android:color/black"
             android:background="@android:color/darker_gray"
             android:textSize="10pt" />
@@ -174,7 +185,7 @@
             android:fontFamily="@font/bmjua"
             android:gravity="center_vertical"
             android:paddingLeft="4dp"
-            android:text="주소(DB로 출력)"
+            android:text="(DB로 출력)"
             android:textColor="@android:color/black"
             android:background="@android:color/darker_gray"
             android:textSize="10pt" />
@@ -220,7 +231,7 @@
             android:fontFamily="@font/bmjua"
             android:gravity="center_vertical"
             android:paddingLeft="4dp"
-            android:text="번호(DB로 출력)"
+            android:text="(DB로 출력)"
             android:textColor="@android:color/black"
             android:background="@android:color/darker_gray"
             android:textSize="10pt" />

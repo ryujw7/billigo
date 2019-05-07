@@ -11,7 +11,7 @@ public class DronRegistFirstRegistActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dron_regist_firstregist);
+        setContentView(R.layout.activity_drone_regist_firstregist);
         final CheckBox checkBox1 = (CheckBox)findViewById(R.id.infoagree);
         final CheckBox checkBox2 = (CheckBox)findViewById(R.id.tradeagree);
         final CheckBox checkBox3 = (CheckBox)findViewById(R.id.droninfoagree);
