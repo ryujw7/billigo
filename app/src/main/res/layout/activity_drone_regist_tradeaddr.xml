@@ -41,7 +41,7 @@
                 android:layout_weight="1"></FrameLayout>
 
             <EditText
-                android:id="@+id/editText2"
+                android:id="@+id/editaddress"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="16"
@@ -259,6 +259,7 @@
             android:layout_weight="1"></FrameLayout>
 
         <Button
+            android:id="@+id/adrt_finish"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="18"

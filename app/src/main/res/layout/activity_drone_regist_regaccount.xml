@@ -309,6 +309,7 @@
             android:textSize="30dp" />
 
         <Button
+            android:id="@+id/adrrfinish"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="10"

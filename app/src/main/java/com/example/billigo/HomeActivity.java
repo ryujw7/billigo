@@ -74,16 +74,15 @@ public class HomeActivity extends BaseActivity {
     private void init() {
         context = this;
         naverLoginInstance = OAuthLogin.getInstance();
+        naverLoginInstance.init(this,
+                CLIENT_ID,
+                CLIENT_SECRET,
+                CLIENT_NAME);
         if (naverLoginInstance.getState(context) != OAuthLoginState.NEED_LOGIN) {
             naverLoginInstance.logout(context);
             setResult(RESULT_OK);
             finish();
         }
-        naverLoginInstance = OAuthLogin.getInstance();
-        naverLoginInstance.init(this,
-                CLIENT_ID,
-                CLIENT_SECRET,
-                CLIENT_NAME);
     }
 
     private void init_View() {
@@ -129,12 +128,5 @@ public class HomeActivity extends BaseActivity {
                 e.printStackTrace();
             }
         }
-    }
-
-    @Override
-    public void onBackPressed() {
-        startActivity(new Intent(HomeActivity.this, MainActivity.class));
-        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
-        finish();
     }
 }

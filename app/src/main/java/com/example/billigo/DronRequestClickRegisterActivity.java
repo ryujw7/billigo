@@ -8,7 +8,7 @@ public class DronRequestClickRegisterActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dron_request_click_register);
+        setContentView(R.layout.activity_drone_request_click_register);
         findViewById(R.id.adrcr_requestbtn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

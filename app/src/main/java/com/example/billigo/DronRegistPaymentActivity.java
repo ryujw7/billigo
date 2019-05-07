@@ -1,6 +1,8 @@
 package com.example.billigo;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.view.View;
 
 public class DronRegistPaymentActivity extends BaseActivity {
@@ -11,8 +13,10 @@ public class DronRegistPaymentActivity extends BaseActivity {
         findViewById(R.id.adrp_pay).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
+                Intent intent = new Intent(DronRegistPaymentActivity.this, DronRegistResultActivity.class);
+                startActivity(intent);
             }
         });
     }
+
 }

@@ -115,8 +115,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1.5"
                     android:text="좋아요 수"
-                    android:gravity="center|center"
-                    android:textsize="3dp"/>
+                    android:gravity="center|center"/>
 
                 <FrameLayout
                     android:layout_width="0dp"
@@ -138,8 +137,7 @@
                     android:layout_weight="1.5"
                     android:text="싫어요 수"
                     android:gravity="center|center"
-                    android:textColor="@android:color/darker_gray"
-                    android:textsize="3dp"/>
+                    android:textColor="@android:color/darker_gray"/>
 
             </LinearLayout>
 

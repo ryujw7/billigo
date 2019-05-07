@@ -2,6 +2,7 @@ package com.example.billigo;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.view.View;
 
 public class DronRegistDronActivity extends BaseActivity {
@@ -18,9 +19,11 @@ public class DronRegistDronActivity extends BaseActivity {
         findViewById(R.id.adrdnextbtn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(DronRegistDronActivity.this, DronRegistPeriodActivity.class));
+                Intent intent = new Intent(DronRegistDronActivity.this, DronRegistPeriodActivity.class);
+                startActivity(intent);
                 overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             }
         });
     }
+
 }

@@ -151,7 +151,6 @@
             android:fontFamily="@font/bmjua"
             android:gravity="center_vertical"
             android:paddingLeft="15dp"
-            android:textsize="10dp"
             android:textColor="@android:color/holo_green_light"
             android:text="확인 하셨다면 알림전송 버튼 눌러주세요."/>
     </LinearLayout>

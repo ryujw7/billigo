@@ -1,6 +1,6 @@
 package com.example.billigo;
 
-import android.content.ClipData;
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -23,15 +23,16 @@ public class MainActivity extends BaseActivity {
     private boolean addrRegist = false;
     private int REQ_LOGIN = 1;
     private int REQ_LOGOUT = 2;
+    private int REQ_FINISH = 3;
     ViewPager pager;
     DrawerLayout drawerLayout;
     NavigationView nv;
     View header;
     ImageButton backButton;
-    String flag;
     View content_main;
     TextView textView;
     MenuItem item;
+    Context context = this;
     private int isFirst; //  초기화면인지 파악
 
     @Override
@@ -66,7 +67,7 @@ public class MainActivity extends BaseActivity {
                 int id = menuItem.getItemId();
                 switch (id) {
                     case R.id.login:
-                        if(item.getTitle() == "로그아웃") {
+                        if(item.getTitle().toString() == "로그아웃") {
                             item.setTitle("로그인");
                             textView.setText("로그인하려면 왼쪽 버튼 클릭");
                             Intent intentlogout = new Intent(MainActivity.this, HomeActivity.class);
@@ -95,8 +96,12 @@ public class MainActivity extends BaseActivity {
         findViewById(R.id.dron_regist).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, DronRegistMainActivity.class));
-                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+                if(item.getTitle() == "로그아웃") {
+                    startActivity(new Intent(MainActivity.this, DronRegistMainActivity.class));
+                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+                } else {
+                    Toast.makeText(context,"로그인 먼저 해주세요", Toast.LENGTH_SHORT).show();
+                }
             }
         });
         findViewById(R.id.dron_request).setOnClickListener(new View.OnClickListener() {
@@ -124,6 +129,7 @@ public class MainActivity extends BaseActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == REQ_LOGIN) {
             if (resultCode == RESULT_OK) {
                 item.setTitle("로그아웃");
@@ -140,6 +146,11 @@ public class MainActivity extends BaseActivity {
                 Toast.makeText(this, "로그아웃 성공", Toast.LENGTH_SHORT).show();
                 textView.setText("로그인하려면 왼쪽 버튼 클릭");
             }
+        } else if(requestCode == REQ_FINISH) {
+            if(resultCode == RESULT_OK) {
+                Toast.makeText(this, "로그아웃 성공", Toast.LENGTH_SHORT).show();
+                textView.setText("로그인하려면 왼쪽 버튼 클릭");
+            }
         }
     }
 
@@ -148,7 +159,12 @@ public class MainActivity extends BaseActivity {
         if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
             drawerLayout.closeDrawer(GravityCompat.START);
         } else {
-            super.onBackPressed();
+            if(item.getTitle() == "로그아웃") {
+                Intent intentfinish = new Intent(MainActivity.this, HomeActivity.class);
+                startActivityForResult(intentfinish, REQ_FINISH);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+            }
+            finish();
         }
     }
 }
