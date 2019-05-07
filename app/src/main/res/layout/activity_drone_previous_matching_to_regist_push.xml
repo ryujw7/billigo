@@ -12,28 +12,12 @@
         android:layout_weight="0.5">
     </FrameLayout>
 
-    <LinearLayout
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1.5"
-        android:weightSum="10">
-        <FrameLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-        </FrameLayout>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="8"
-            android:fontFamily="@font/bmjua"
-            android:gravity="center||center"
-            android:text="대한민국 농업을 살리겠습니다!"
-            android:paddingLeft="4dp"
-            android:textColor="@android:color/black"
-            android:textSize="11pt" />
-    </LinearLayout>
+        android:scaleType="centerInside"
+        android:src="@drawable/push_notification"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -52,41 +36,16 @@
             android:layout_weight="8"
             android:fontFamily="@font/bmjua"
             android:gravity="center||center"
-            android:paddingLeft="4dp"
-            android:text="닉네임(등록자) 님이 도착하였습니까?"
+            android:text="방제 요청이 들어왔습니다"
             android:textColor="@android:color/black"
             android:background="@drawable/textedge"
-            android:textSize="9pt" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.5"
-        android:weightSum="10">
-        <FrameLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-        </FrameLayout>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="8"
-            android:fontFamily="@font/bmjua"
-            android:gravity="center_vertical"
-            android:paddingLeft="4dp"
-            android:text="확인 버튼 클릭 시 방제가 시작됩니다"
-            android:textColor="@android:color/holo_green_light"
-            android:textSize="9pt" />
-
+            android:textSize="12.5pt" />
     </LinearLayout>
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="0.5">
     </FrameLayout>
 
     <LinearLayout

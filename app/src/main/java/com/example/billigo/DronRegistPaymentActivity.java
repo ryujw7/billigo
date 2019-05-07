@@ -7,7 +7,7 @@ public class DronRegistPaymentActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dron_regist_payment);
+        setContentView(R.layout.activity_drone_regist_payment);
         findViewById(R.id.adrp_pay).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

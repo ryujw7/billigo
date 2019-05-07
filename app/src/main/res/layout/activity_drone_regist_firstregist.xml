@@ -169,7 +169,7 @@
             android:layout_height="match_parent"
             android:layout_weight="4"
             android:fontFamily="@font/bmjua"
-            android:text="희망거래지역"
+            android:text="희망            거래지역"
             android:textColor="@android:color/black"
             android:gravity="center_vertical"
             android:paddingLeft="5pt"/>
@@ -197,7 +197,7 @@
             android:layout_height="match_parent"
             android:layout_weight="4"
             android:fontFamily="@font/bmjua"
-            android:text="거래계좌등록"
+            android:text="거래            계좌등록"
             android:textColor="@android:color/black"
             android:gravity="center_vertical"
             android:paddingLeft="5pt"/>

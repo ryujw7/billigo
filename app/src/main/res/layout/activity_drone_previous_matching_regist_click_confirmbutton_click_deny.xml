@@ -59,7 +59,7 @@
             android:layout_weight="1">
         </FrameLayout>
 
-        <TextView
+        <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="6"
@@ -71,13 +71,13 @@
             android:background="@android:color/black"
             android:textSize="12.5pt" />
 
-        <ImageButton
+        <CheckBox
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:scaleType="fitXY"
-            android:background="@drawable/textedge"
-            android:src="@drawable/click_cancel_button"/>
+            android:button="@android:color/transparent"
+            android:background="@drawable/check_on_off"
+            android:scaleType="fitXY"/>
     </LinearLayout>
 
     <FrameLayout
@@ -97,7 +97,7 @@
             android:layout_weight="1">
         </FrameLayout>
 
-        <TextView
+        <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="6"
@@ -109,13 +109,13 @@
             android:background="@android:color/black"
             android:textSize="12.5pt" />
 
-        <ImageButton
+        <CheckBox
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:scaleType="fitXY"
-            android:background="@drawable/textedge"
-            android:src="@drawable/click_cancel_button"/>
+            android:button="@android:color/transparent"
+            android:background="@drawable/check_on_off"
+            android:scaleType="fitXY"/>
     </LinearLayout>
 
     <FrameLayout
@@ -135,7 +135,7 @@
             android:layout_weight="1">
         </FrameLayout>
 
-        <TextView
+        <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="6"
@@ -147,13 +147,13 @@
             android:background="@android:color/black"
             android:textSize="12.5pt" />
 
-        <ImageButton
+        <CheckBox
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:scaleType="fitXY"
-            android:background="@drawable/textedge"
-            android:src="@drawable/click_cancel_button"/>
+            android:button="@android:color/transparent"
+            android:background="@drawable/check_on_off"
+            android:scaleType="fitXY"/>
     </LinearLayout>
 
     <FrameLayout
@@ -173,7 +173,7 @@
             android:layout_weight="1">
         </FrameLayout>
 
-        <TextView
+        <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="6"
@@ -185,13 +185,13 @@
             android:background="@android:color/black"
             android:textSize="12.5pt" />
 
-        <ImageButton
+        <CheckBox
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:scaleType="fitXY"
-            android:background="@drawable/textedge"
-            android:src="@drawable/click_cancel_button"/>
+            android:button="@android:color/transparent"
+            android:background="@drawable/check_on_off"
+            android:scaleType="fitXY"/>
     </LinearLayout>
 
     <FrameLayout

@@ -8,7 +8,7 @@ public class DronRegistMainActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dron_regist_main);
+        setContentView(R.layout.activity_drone_regist_main);
         findViewById(R.id.firstregist).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

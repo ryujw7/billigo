@@ -6,6 +6,6 @@ public class DronRegistDronLicenseActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dron_regist_reglicense);
+        setContentView(R.layout.activity_drone_regist_reglicense);
     }
 }
