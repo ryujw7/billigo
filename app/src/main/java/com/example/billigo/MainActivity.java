@@ -16,6 +16,9 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
+
+
 public class MainActivity extends BaseActivity {
     private boolean addrRegist = false;
     private int REQ_LOGIN = 1;
