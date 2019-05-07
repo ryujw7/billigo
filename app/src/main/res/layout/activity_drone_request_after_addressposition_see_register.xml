@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="15">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.02">
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.48"
+            android:weightSum="10">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:fontFamily="@font/bmjua"
+                android:textSize="9pt"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:background="@drawable/textedge"
+                android:hint="키워드로 찾기\n(ex, 3000평 방제 등)"/>
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:src="@drawable/search_korean"
+                android:scaleType="fitXY"
+                android:background="@drawable/textedge"/>
+        </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="13.5"
+        android:weightSum="10">
+
+        <com.naver.maps.map.MapView
+            android:id="@+id/navermap_map_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></com.naver.maps.map.MapView>
+    </ScrollView>
+</LinearLayout>
