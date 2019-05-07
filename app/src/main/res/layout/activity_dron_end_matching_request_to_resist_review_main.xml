@@ -19,27 +19,32 @@
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="10dp"></FrameLayout>
+            android:layout_height="30dp"></FrameLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="90dp"
+            android:layout_height="70dp"
             android:layout_gravity="center|center"
-            android:weightSum="30">
+            android:weightSum="15">
 
             <FrameLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="2" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:scaleType="fitXY"
+                android:src="@drawable/farm4"/>
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="26"
-                android:background="@drawable/textedge"
+                android:layout_weight="10"
                 android:fontFamily="@font/bmjua"
-                android:gravity="center|center"
-                android:paddingLeft="4dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
                 android:text="등록자(DB)"
                 android:textColor="@android:color/black"
                 android:textSize="15pt" />
@@ -49,12 +54,6 @@
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_gravity="center|center"
-            android:fontFamily="@font/bmjua"
-            android:gravity="center|center"
-            android:paddingLeft="4dp"
-            android:text="등록자(DB)"
-            android:textColor="@android:color/black"
-            android:textSize="15pt"
             android:weightSum="30">
 
             <FrameLayout
@@ -76,13 +75,24 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="8"
+                android:layout_weight="6"
                 android:fontFamily="@font/bmjua"
-                android:gravity="center|center"
+                android:gravity="center_vertical|right"
                 android:paddingLeft="4dp"
                 android:text="출력해야 돼"
                 android:textColor="@android:color/black"
-                android:textSize="8pt" />
+                android:textSize="6pt" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:fontFamily="@font/bmjua"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="개"
+                android:textColor="@android:color/black"
+                android:textSize="6pt" />
 
             <TextView
                 android:layout_width="0dp"
@@ -98,13 +108,24 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="8"
+                android:layout_weight="6"
                 android:fontFamily="@font/bmjua"
-                android:gravity="center|center"
+                android:gravity="center_vertical|right"
                 android:paddingLeft="4dp"
                 android:text="출력해야 돼"
                 android:textColor="@android:color/black"
-                android:textSize="8pt" />
+                android:textSize="6pt" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:fontFamily="@font/bmjua"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="점"
+                android:textColor="@android:color/black"
+                android:textSize="6pt" />
 
             <FrameLayout
                 android:layout_width="0dp"

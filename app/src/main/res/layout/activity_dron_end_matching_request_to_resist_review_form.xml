@@ -255,16 +255,10 @@
 
     </LinearLayout>
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.05">
-    </FrameLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3"
+        android:layout_weight="2"
         android:weightSum="10">
 
         <FrameLayout
@@ -277,13 +271,14 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="8"
-            android:src="@drawable/textedge"/>
+            android:src="@drawable/farm1"
+            android:background="@drawable/textedge"/>
     </LinearLayout>
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.25">
+        android:layout_weight="1">
     </FrameLayout>
 
     <LinearLayout

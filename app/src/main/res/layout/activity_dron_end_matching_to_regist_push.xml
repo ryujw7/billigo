@@ -26,13 +26,18 @@
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="8"
+            android:layout_weight="6"
             android:fontFamily="@font/bmjua"
-            android:gravity="center||center"
-            android:text="대한민국 농업을 살리겠습니다!"
-            android:paddingLeft="4dp"
-            android:textColor="@android:color/black"
+            android:gravity="center|center"
+            android:paddingLeft="15dp"
+            android:text="땀 닦으시고 물 드시고"
+            android:textColor="@android:color/holo_green_light"
             android:textSize="11pt" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:src="@drawable/farm8"/>
     </LinearLayout>
 
     <LinearLayout

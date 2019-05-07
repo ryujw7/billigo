@@ -4,12 +4,48 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/main_textedge"
-    android:weightSum="10">
+    android:weightSum="12">
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="0.75">
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="10">
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:src="@drawable/cancel"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center_vertical"
+            android:paddingLeft="4dp"
+            android:text="취소 사유를 선택 해 주세요"
+            android:textColor="@android:color/black"
+            android:textSize="10pt" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
     </FrameLayout>
 
     <LinearLayout
@@ -26,37 +62,22 @@
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="8"
-            android:fontFamily="@font/bmjua"
-            android:gravity="center_vertical"
-            android:paddingLeft="4dp"
-            android:text="취소 사유를 선택 해 주세요"
-            android:textColor="@android:color/black"
-            android:textSize="10pt" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:weightSum="10">
-        <FrameLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-        </FrameLayout>
-
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="8"
+            android:layout_weight="6"
             android:fontFamily="@font/bmjua"
             android:gravity="center_vertical"
             android:paddingLeft="4dp"
             android:text="드론 고장"
-            android:textColor="@android:color/black"
-            android:background="@android:color/darker_gray"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"
             android:textSize="12.5pt" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:scaleType="fitXY"
+            android:background="@drawable/textedge"
+            android:src="@drawable/click_cancel_button"/>
     </LinearLayout>
 
     <FrameLayout
@@ -76,17 +97,25 @@
             android:layout_weight="1">
         </FrameLayout>
 
-        <Button
+        <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="8"
+            android:layout_weight="6"
             android:fontFamily="@font/bmjua"
             android:gravity="center_vertical"
             android:paddingLeft="4dp"
             android:text="사전 예약"
-            android:textColor="@android:color/black"
-            android:background="@android:color/darker_gray"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"
             android:textSize="12.5pt" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:scaleType="fitXY"
+            android:background="@drawable/textedge"
+            android:src="@drawable/click_cancel_button"/>
     </LinearLayout>
 
     <FrameLayout
@@ -106,17 +135,25 @@
             android:layout_weight="1">
         </FrameLayout>
 
-        <Button
+        <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="8"
+            android:layout_weight="6"
             android:fontFamily="@font/bmjua"
             android:gravity="center_vertical"
             android:paddingLeft="4dp"
-            android:text="거리가 멀어요"
-            android:textColor="@android:color/black"
-            android:background="@android:color/darker_gray"
+            android:text="거리가 멀어요 ㅠㅠ"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"
             android:textSize="12.5pt" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:scaleType="fitXY"
+            android:background="@drawable/textedge"
+            android:src="@drawable/click_cancel_button"/>
     </LinearLayout>
 
     <FrameLayout
@@ -136,17 +173,25 @@
             android:layout_weight="1">
         </FrameLayout>
 
-        <Button
+        <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="8"
+            android:layout_weight="6"
             android:fontFamily="@font/bmjua"
             android:gravity="center_vertical"
             android:paddingLeft="4dp"
-            android:text="농약이 다 되어서요"
-            android:textColor="@android:color/black"
-            android:background="@android:color/darker_gray"
+            android:text="농약이 다 되어서요."
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"
             android:textSize="12.5pt" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:scaleType="fitXY"
+            android:background="@drawable/textedge"
+            android:src="@drawable/click_cancel_button"/>
     </LinearLayout>
 
     <FrameLayout
@@ -166,7 +211,7 @@
             android:layout_weight="1">
         </FrameLayout>
 
-        <TextView
+        <EditText
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="8"
@@ -178,10 +223,39 @@
             android:textSize="10pt" />
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:weightSum="10">
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center|right"
+            android:text="작성완료하고 아래 버튼 클릭"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="6pt" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/below_click"/>
+    </LinearLayout>
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.25">
+        android:layout_weight="0.5">
     </FrameLayout>
 
     <LinearLayout

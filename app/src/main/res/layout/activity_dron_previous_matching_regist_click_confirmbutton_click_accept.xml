@@ -4,13 +4,19 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/main_textedge"
-    android:weightSum="15">
-
+    android:weightSum="16">
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="0.5">
     </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="10">
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -64,7 +70,7 @@
             android:fontFamily="@font/bmjua"
             android:gravity="center||center"
             android:paddingLeft="4dp"
-            android:hint="조회하기\n(클릭)"
+            android:hint="조회하기  (클릭)"
             android:textColor="@android:color/black"
             android:background="@drawable/textedge"
             android:textSize="8pt" />
@@ -103,25 +109,57 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="8"
-        android:weightSum="12">
-
-        <FrameLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1.2">
-        </FrameLayout>
+        android:weightSum="10">
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="9.6"
+            android:layout_weight="1"
+            android:src="@drawable/finger1">
+        </ImageView>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
             android:background="@drawable/textedge" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/finger2">
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:weightSum="10">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:textsize="10dp"
+            android:textColor="@android:color/holo_green_light"
+            android:text="확인 하셨다면 알림전송 버튼 눌러주세요."/>
     </LinearLayout>
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="0.5">
     </FrameLayout>
 
     <LinearLayout
