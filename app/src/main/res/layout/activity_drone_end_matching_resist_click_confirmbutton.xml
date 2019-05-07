@@ -47,9 +47,19 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="8"
+<<<<<<< HEAD
+            android:fontFamily="@font/bmjua"
+            android:gravity="center|center"
+            android:paddingLeft="4dp"
+            android:text="잠시만 기다려주세요"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_green_light"
+            android:textSize="13pt"/>
+=======
             android:src="@drawable/farm6"
             android:scaleType="centerInside"
             android:background="@drawable/textedge" />
+>>>>>>> df79792acd24e90a6507f7a67cae07ac0ce1a316
     </LinearLayout>
 
     <FrameLayout

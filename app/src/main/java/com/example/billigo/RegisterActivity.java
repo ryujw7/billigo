@@ -3,6 +3,7 @@ package com.example.billigo;
  * 회원가입 양식입력 액티비티
  * made by 오늘도 지구인
  * */
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -14,7 +15,9 @@ public class RegisterActivity extends BaseActivity {
         findViewById(R.id.register).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                startActivity(new Intent(RegisterActivity.this, MainActivity.class));
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+                finish();
             }
         });
     }

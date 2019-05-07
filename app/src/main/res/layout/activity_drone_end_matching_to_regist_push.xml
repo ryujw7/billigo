@@ -28,10 +28,20 @@
             android:layout_height="match_parent"
             android:layout_weight="6"
             android:fontFamily="@font/bmjua"
+<<<<<<< HEAD:app/src/main/res/layout/activity_drone_end_matching_to_regist_push.xml
             android:gravity="center_vertical"
+=======
+            android:gravity="center|center"
+<<<<<<< HEAD
+            android:text="대한민국 농업을 살리겠습니다!"
+            android:paddingLeft="4dp"
+            android:textColor="@android:color/black"
+=======
+>>>>>>> 87046d3f07897b3ac6a9aedb8651ce14780ff6df:app/src/main/res/layout/activity_dron_end_matching_to_regist_push.xml
             android:paddingLeft="15dp"
             android:text="고생많으셨습니다.          땀 닦으시고 물 드시고"
             android:textColor="@android:color/holo_green_light"
+>>>>>>> df79792acd24e90a6507f7a67cae07ac0ce1a316
             android:textSize="11pt" />
         <ImageView
             android:layout_width="0dp"
@@ -56,7 +66,7 @@
             android:layout_height="match_parent"
             android:layout_weight="8"
             android:fontFamily="@font/bmjua"
-            android:gravity="center||center"
+            android:gravity="center|center"
             android:paddingLeft="4dp"
             android:text="닉네임(등록자)님 다 뿌렸네요?"
             android:textColor="@android:color/black"
@@ -110,7 +120,7 @@
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:fontFamily="@font/bmjua"
-            android:gravity="center||center"
+            android:gravity="center|center"
             android:text="확인"
             android:textColor="@android:color/white"
             android:background="@android:color/holo_green_light"

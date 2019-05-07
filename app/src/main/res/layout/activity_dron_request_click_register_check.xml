@@ -1,240 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/main_textedge"
-    android:weightSum="10">
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.5">
-    </FrameLayout>
+    android:background="@drawable/textedge"
+    android:weightSum="18">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1.5"
+        android:layout_weight="1.4"
         android:weightSum="10">
         <FrameLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:layout_weight="0.2">
         </FrameLayout>
-
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="2"
-            android:src="@drawable/request_information"/>
-
         <TextView
             android:layout_width="0dp"
+            android:layout_weight="9"
             android:layout_height="match_parent"
-            android:layout_weight="6"
+            android:text="닉네임 출력(자바)"
             android:fontFamily="@font/bmjua"
-<<<<<<< HEAD:app/src/main/res/layout/activity_drone_previous_matching_regist_click_confirmbutton.xml
-            android:gravity="center_vertical"
-            android:paddingLeft="10dp"
-            android:text="방제 요청자에                    대한 정보입니다"
-=======
             android:gravity="center|center"
-            android:paddingLeft="4dp"
-            android:text="방제 요청자에 대한 정보입니다"
->>>>>>> 87046d3f07897b3ac6a9aedb8651ce14780ff6df:app/src/main/res/layout/activity_dron_previous_matching_regist_click_confirmbutton.xml
-            android:textColor="@android:color/black"
-            android:textSize="13pt" />
-    </LinearLayout>
+            android:textSize="15pt"
+            android:textColor="@android:color/holo_blue_dark" />
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.25">
-    </FrameLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.5"
-        android:weightSum="10">
-        <FrameLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-        </FrameLayout>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="8"
-            android:fontFamily="@font/bmjua"
-            android:gravity="center_vertical"
-            android:paddingLeft="4dp"
-            android:text="결제자"
-            android:textColor="@android:color/black"
-            android:textSize="9pt" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.75"
-        android:weightSum="10">
-        <FrameLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-        </FrameLayout>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="8"
-            android:fontFamily="@font/bmjua"
-            android:gravity="center_vertical"
-            android:paddingLeft="4dp"
-            android:text="(DB로 출력)"
-            android:textColor="@android:color/black"
-            android:background="@android:color/darker_gray"
-            android:textSize="10pt" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.5"
+        android:layout_weight="0.6"
         android:weightSum="10">
         <FrameLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:layout_weight="0.5">
         </FrameLayout>
-
         <TextView
             android:layout_width="0dp"
+            android:layout_weight="9"
             android:layout_height="match_parent"
-            android:layout_weight="8"
+            android:text="최근 리뷰: (DB로 출력), 평점 : (DB로 출력)"
             android:fontFamily="@font/bmjua"
-            android:gravity="center_vertical"
-            android:paddingLeft="4dp"
-            android:text="결제정보"
-            android:textColor="@android:color/black"
-            android:textSize="9pt" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.75"
-        android:weightSum="10">
-        <FrameLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-        </FrameLayout>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="8"
-            android:fontFamily="@font/bmjua"
-            android:gravity="center_vertical"
-            android:paddingLeft="4dp"
-            android:text="(DB로 출력)"
-            android:textColor="@android:color/black"
-            android:background="@android:color/darker_gray"
-            android:textSize="10pt" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.5"
-        android:weightSum="10">
-        <FrameLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-        </FrameLayout>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="8"
-            android:fontFamily="@font/bmjua"
-            android:gravity="center_vertical"
-            android:paddingLeft="4dp"
-            android:text="주소"
-            android:textColor="@android:color/black"
-            android:textSize="9pt" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.75"
-        android:weightSum="10">
-        <FrameLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-        </FrameLayout>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="8"
-            android:fontFamily="@font/bmjua"
-            android:gravity="center_vertical"
-            android:paddingLeft="4dp"
-            android:text="(DB로 출력)"
-            android:textColor="@android:color/black"
-            android:background="@android:color/darker_gray"
-            android:textSize="10pt" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.5"
-        android:weightSum="10">
-        <FrameLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-        </FrameLayout>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="8"
-            android:fontFamily="@font/bmjua"
-            android:gravity="center_vertical"
-            android:paddingLeft="4dp"
-            android:text="번호"
-            android:textColor="@android:color/black"
-            android:textSize="9pt" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.75"
-        android:weightSum="10">
-        <FrameLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-        </FrameLayout>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="8"
-            android:fontFamily="@font/bmjua"
-            android:gravity="center_vertical"
-            android:paddingLeft="4dp"
-            android:text="(DB로 출력)"
-            android:textColor="@android:color/black"
-            android:background="@android:color/darker_gray"
-            android:textSize="10pt" />
+            android:gravity="center|center"
+            android:textSize="10pt"
+            android:textColor="@android:color/darker_gray" />
     </LinearLayout>
 
     <FrameLayout
@@ -251,36 +65,206 @@
         <FrameLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:layout_weight="0.5">
         </FrameLayout>
-
-        <Button
+        <TextView
             android:layout_width="0dp"
+            android:layout_weight="9"
             android:layout_height="match_parent"
-            android:layout_weight="3.75"
+            android:text="닉네임 출력(자바)"
             android:fontFamily="@font/bmjua"
-            android:gravity="center|center"
-            android:text="수락"
-            android:textColor="@android:color/white"
-            android:background="@android:color/holo_green_light"
-            android:textSize="14pt" />
+            android:gravity="left"
+            android:textSize="12pt"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="10">
         <FrameLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.5">
         </FrameLayout>
-        <Button
+        <TextView
             android:layout_width="0dp"
+            android:layout_weight="9"
             android:layout_height="match_parent"
-            android:layout_weight="3.75"
+            android:text="드론 자격증"
             android:fontFamily="@font/bmjua"
-            android:gravity="center|center"
-            android:text="거절"
-            android:textColor="@android:color/white"
-            android:background="@android:color/holo_green_light"
-            android:textSize="14pt" />
-
-
+            android:gravity="left"
+            android:textSize="12pt"
+            android:textColor="@android:color/black" />
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:weightSum="10">
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+        </FrameLayout>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="match_parent"
+            android:text="일련번호 : (DB로 출력)"
+            android:fontFamily="@font/bmjua"
+            android:gravity="left"
+            android:paddingLeft="3pt"
+            android:textSize="9pt"
+            android:textColor="@android:color/black"
+            android:background="@android:color/darker_gray"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="10">
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+        </FrameLayout>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="match_parent"
+            android:text="주요 거래지역과 주의사항"
+            android:fontFamily="@font/bmjua"
+            android:gravity="left"
+            android:textSize="12pt"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:weightSum="10">
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+        </FrameLayout>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="match_parent"
+            android:text="주요 거래지역 : (DB로 출력)"
+            android:fontFamily="@font/bmjua"
+            android:gravity="left"
+            android:paddingLeft="3pt"
+            android:textSize="9pt"
+            android:textColor="@android:color/black"
+            android:background="@android:color/darker_gray"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="10">
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+        </FrameLayout>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="match_parent"
+            android:text="드론"
+            android:fontFamily="@font/bmjua"
+            android:gravity="left"
+            android:textSize="12pt"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:weightSum="10">
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+        </FrameLayout>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="match_parent"
+            android:text="드론 등록조회 후 데이터 : (DB로 출력)"
+            android:fontFamily="@font/bmjua"
+            android:gravity="left"
+            android:paddingLeft="3pt"
+            android:textSize="9pt"
+            android:textColor="@android:color/black"
+            android:background="@android:color/darker_gray"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="16">
+        <Button
+            android:id="@+id/adrcrc_backbtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:textColor="@android:color/black"
+            android:background="@drawable/main_textedge"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center|center"
+            android:textSize="14pt"
+            android:text="뒤로가기"/>
+
+        <Button
+            android:id="@+id/adrcrc_requestbtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:textColor="@android:color/black"
+            android:background="@drawable/main_textedge"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center|center"
+            android:textSize="14pt"
+            android:text="신청하기"/>
+
+    </LinearLayout>
 </LinearLayout>

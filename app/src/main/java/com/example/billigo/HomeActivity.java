@@ -10,22 +10,25 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.nhn.android.naverlogin.OAuthLogin;
 import com.nhn.android.naverlogin.OAuthLoginHandler;
+import com.nhn.android.naverlogin.data.OAuthLoginState;
 import com.nhn.android.naverlogin.ui.view.OAuthLoginButton;
 
 import org.json.JSONObject;
 
 public class HomeActivity extends BaseActivity {
-    private  OAuthLoginButton naverLoginButton;
+    private boolean isLogin = false;
+    private OAuthLoginButton naverLoginButton;
     private static OAuthLogin naverLoginInstance;
-
     static final String CLIENT_ID = "GCwVPUMzNoVnZDTTCKlf";
     static final String CLIENT_SECRET = "dnpMDJGUAP";
     static final String CLIENT_NAME = "로그인 테스트";
-
+    String id;
+    String pw;
     static Context context;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,13 +36,21 @@ public class HomeActivity extends BaseActivity {
         setContentView(R.layout.activity_home);
         init();
         init_View();
-        findViewById(R.id.loginbutton).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        final EditText id_home = (EditText)findViewById(R.id.home_id);
+        final EditText pw_home = (EditText)findViewById(R.id.home_pw);
+        id = id_home.getText().toString();
+        pw = pw_home.getText().toString();
+                findViewById(R.id.loginbutton).setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                /*if(id == "ryujw7"&&pw == "1111") {
+                    setResult(RESULT_OK);
+                } else {
+                    setResult(RESULT_CANCELED);
+                }*/
+                setResult(RESULT_OK);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 finish();
-                /*
-                startActivity(new Intent(HomeActivity.this, MainActivity.class));
-                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);*/
             }
         });
         findViewById(R.id.registerbuton).setOnClickListener(new View.OnClickListener() {
@@ -63,6 +74,12 @@ public class HomeActivity extends BaseActivity {
     private void init() {
         context = this;
         naverLoginInstance = OAuthLogin.getInstance();
+        if (naverLoginInstance.getState(context) != OAuthLoginState.NEED_LOGIN) {
+            naverLoginInstance.logout(context);
+            setResult(RESULT_OK);
+            finish();
+        }
+        naverLoginInstance = OAuthLogin.getInstance();
         naverLoginInstance.init(this,
                 CLIENT_ID,
                 CLIENT_SECRET,
@@ -70,18 +87,16 @@ public class HomeActivity extends BaseActivity {
     }
 
     private void init_View() {
-        naverLoginButton = (OAuthLoginButton)findViewById(R.id.naverLogin);
-
+        naverLoginButton = (OAuthLoginButton) findViewById(R.id.naverLogin);
         OAuthLoginHandler naverLoginHandler = new OAuthLoginHandler() {
             @Override
             public void run(boolean b) {
-                if(b) {
-                    startActivity(new Intent(HomeActivity.this, MainActivity.class));
+                if (b) {
+                    setResult(RESULT_OK);
                     overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
-                    Toast.makeText(context, "로그인 성공",Toast.LENGTH_SHORT).show();
                     finish();
                 } else {
-                    startActivity(new Intent(HomeActivity.this, MainActivity.class));
+                    setResult(RESULT_CANCELED);
                     overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                     String errorCode = naverLoginInstance.getLastErrorCode(context).getCode();
                     String errorDesc = naverLoginInstance.getLastErrorDesc(context);
@@ -92,6 +107,7 @@ public class HomeActivity extends BaseActivity {
         };
         naverLoginButton.setOAuthLoginHandler(naverLoginHandler);
     }
+
     private class RequestApiTask extends AsyncTask<Void, Void, String> {
         @Override
         protected void onPreExecute() {//작업이 실행되기 전에 먼저 실행.
@@ -109,12 +125,12 @@ public class HomeActivity extends BaseActivity {
                 JSONObject jsonObject = new JSONObject(content);
                 JSONObject response = jsonObject.getJSONObject("response");
                 String email = response.getString("email");
-            }
-            catch (Exception e){
+            } catch (Exception e) {
                 e.printStackTrace();
             }
         }
     }
+
     @Override
     public void onBackPressed() {
         startActivity(new Intent(HomeActivity.this, MainActivity.class));

@@ -53,7 +53,7 @@
             android:layout_height="match_parent"
             android:text="도착 예정시간"
             android:fontFamily="@font/bmjua"
-            android:gravity="center||center"
+            android:gravity="center|center"
             android:paddingLeft="4dp"
             android:textSize="12pt"
             android:textColor="@android:color/black" />
@@ -63,7 +63,7 @@
             android:layout_height="match_parent"
             android:text="받아와야 됨"
             android:fontFamily="@font/bmjua"
-            android:gravity="center||center"
+            android:gravity="center|center"
             android:background="@drawable/textedge"
             android:paddingLeft="4dp"
             android:textSize="12pt"

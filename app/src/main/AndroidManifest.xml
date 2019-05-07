@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.billigo" >
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <!--반드시 추가--><uses-permission android:name="android.permission.INTERNET" />
     <!--위치정보활용시 추가--><uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <!--위치정보활용시 추가--><uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
@@ -38,8 +40,11 @@
         <activity android:name=".DronRegistDronActivity"/>
         <activity android:name=".DronRegistPaymentActivity"/>
         <activity android:name=".DronRegistPeriodActivity"/>
-
-
+        <activity android:name=".DronRequestClickRegisterCheckActivity"/>
+        <activity android:name=".DronRequestClickRegisterActivity"/>
+        <meta-data
+            android:name="com.naver.maps.map.CLIENT_ID"
+            android:value="i1lg50trzo" />
     </application>
 
 </manifest>

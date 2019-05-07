@@ -29,9 +29,15 @@
             android:layout_height="match_parent"
             android:layout_weight="8"
             android:fontFamily="@font/bmjua"
+<<<<<<< HEAD:app/src/main/res/layout/activity_drone_previous_matching_resist_to_request_deny_message.xml
             android:gravity="center_vertical"
             android:paddingLeft="10dp"
             android:text="거부한 사람(DB로 출력)님      요청을 취소하였습니다."
+=======
+            android:gravity="center|center"
+            android:paddingLeft="4dp"
+            android:text="거부한 사람(DB로 출력)님이 취소하였습니다."
+>>>>>>> 87046d3f07897b3ac6a9aedb8651ce14780ff6df:app/src/main/res/layout/activity_dron_previous_matching_resist_to_request_deny_message.xml
             android:textColor="@android:color/black"
             android:background="@drawable/textedge"
             android:textSize="13pt" />
@@ -53,7 +59,7 @@
             android:layout_height="match_parent"
             android:layout_weight="8"
             android:fontFamily="@font/bmjua"
-            android:gravity="center||center"
+            android:gravity="center|center"
             android:paddingLeft="4dp"
             android:text="취소 사유 : (내용 받아와야 됨) "
             android:textColor="@android:color/black"
@@ -77,7 +83,7 @@
             android:layout_height="match_parent"
             android:layout_weight="8"
             android:fontFamily="@font/bmjua"
-            android:gravity="center||center"
+            android:gravity="center|center"
             android:paddingLeft="4dp"
             android:text="결제 금액은 즉시 반환됩니다."
             android:textColor="@android:color/black"
@@ -107,7 +113,7 @@
             android:layout_height="match_parent"
             android:layout_weight="8"
             android:fontFamily="@font/bmjua"
-            android:gravity="center||center"
+            android:gravity="center|center"
             android:text="확인(클릭 시 대여요청 화면으로)"
             android:textColor="@android:color/white"
             android:background="@android:color/holo_green_light"

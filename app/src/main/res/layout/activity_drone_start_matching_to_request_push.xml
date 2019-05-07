@@ -28,9 +28,15 @@
             android:layout_height="match_parent"
             android:layout_weight="4"
             android:fontFamily="@font/bmjua"
+<<<<<<< HEAD:app/src/main/res/layout/activity_drone_start_matching_to_request_push.xml
             android:gravity="center_vertical"
             android:text="대한민국 농업을           살리겠습니다!"
             android:paddingLeft="10dp"
+=======
+            android:gravity="center|center"
+            android:text="대한민국 농업을 살리겠습니다!"
+            android:paddingLeft="4dp"
+>>>>>>> 87046d3f07897b3ac6a9aedb8651ce14780ff6df:app/src/main/res/layout/activity_dron_start_matching_to_request_push.xml
             android:textColor="@android:color/black"
             android:textSize="11pt" />
 
@@ -64,7 +70,7 @@
             android:layout_height="match_parent"
             android:layout_weight="8"
             android:fontFamily="@font/bmjua"
-            android:gravity="center||center"
+            android:gravity="center|center"
             android:paddingLeft="4dp"
             android:text="닉네임(등록자) 님이 도착하였습니까?"
             android:textColor="@android:color/black"
@@ -118,7 +124,7 @@
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:fontFamily="@font/bmjua"
-            android:gravity="center||center"
+            android:gravity="center|center"
             android:text="확인"
             android:textColor="@android:color/white"
             android:background="@android:color/holo_green_light"
