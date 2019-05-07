@@ -243,6 +243,7 @@
         android:layout_weight="1"
         android:weightSum="16">
         <Button
+            android:id="@+id/adrcrc_backbtn"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="8"
@@ -254,6 +255,7 @@
             android:text="뒤로가기"/>
 
         <Button
+            android:id="@+id/adrcrc_requestbtn"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="8"

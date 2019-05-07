@@ -119,7 +119,7 @@
             android:layout_weight="1.9"
             android:background="@drawable/textedge"
             android:fontFamily="@font/bmjua"
-            android:gravity="center||center"
+            android:gravity="center|center"
             android:text="경기도"
             android:textColor="@android:color/black"
             android:textSize="8pt" />
@@ -154,7 +154,7 @@
             android:layout_weight="1.9"
             android:background="@drawable/textedge"
             android:fontFamily="@font/bmjua"
-            android:gravity="center||center"
+            android:gravity="center|center"
             android:text="강원도"
             android:textColor="@android:color/black"
             android:textSize="8pt" />
@@ -189,7 +189,7 @@
             android:layout_weight="1.9"
             android:background="@drawable/textedge"
             android:fontFamily="@font/bmjua"
-            android:gravity="center||center"
+            android:gravity="center|center"
             android:text="충청도"
             android:textColor="@android:color/black"
             android:textSize="8pt" />
@@ -224,7 +224,7 @@
             android:layout_weight="1.9"
             android:background="@drawable/textedge"
             android:fontFamily="@font/bmjua"
-            android:gravity="center||center"
+            android:gravity="center|center"
             android:text="경상북도"
             android:textColor="@android:color/black"
             android:textSize="8pt" />
@@ -259,7 +259,7 @@
             android:layout_weight="1.9"
             android:background="@drawable/textedge"
             android:fontFamily="@font/bmjua"
-            android:gravity="center||center"
+            android:gravity="center|center"
             android:text="경상남도"
             android:textColor="@android:color/black"
             android:textSize="8pt" />
@@ -294,7 +294,7 @@
             android:layout_weight="1.9"
             android:background="@drawable/textedge"
             android:fontFamily="@font/bmjua"
-            android:gravity="center||center"
+            android:gravity="center|center"
             android:text="전라북도"
             android:textColor="@android:color/black"
             android:textSize="8pt" />
@@ -329,7 +329,7 @@
             android:layout_weight="1.9"
             android:background="@drawable/textedge"
             android:fontFamily="@font/bmjua"
-            android:gravity="center||center"
+            android:gravity="center|center"
             android:text="전라남도"
             android:textColor="@android:color/black"
             android:textSize="8pt" />
@@ -371,7 +371,7 @@
             android:layout_weight="7.6"
             android:background="@color/colorPrimary"
             android:fontFamily="@font/bmjua"
-            android:gravity="center||center"
+            android:gravity="center|center"
             android:text="조금만 기다려주세요!"
             android:textColor="@android:color/white"
             android:textSize="11pt" />

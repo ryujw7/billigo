@@ -28,7 +28,7 @@
             android:layout_height="match_parent"
             android:layout_weight="8"
             android:fontFamily="@font/bmjua"
-            android:gravity="center||center"
+            android:gravity="center|center"
             android:paddingLeft="4dp"
             android:text="잠시만 기다려주세요"
             android:textColor="@android:color/white"

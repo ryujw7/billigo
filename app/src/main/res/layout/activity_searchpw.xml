@@ -154,6 +154,7 @@
             android:layout_weight="7"></FrameLayout>
 
         <Button
+            android:id="@+id/as_chgbtn"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:textColor="@android:color/black"
