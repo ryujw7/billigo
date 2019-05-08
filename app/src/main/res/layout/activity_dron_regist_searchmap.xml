@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10">
+    <fragment
+        android:id="@+id/search_map_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:name="com.naver.maps.map.MapFragment"/>
+
+    <Button
+        android:id="@+id/adrs_searchfinish"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="주소 등록"
+        android:gravity="center|center"
+        android:fontFamily="@font/bmjua"
+        android:textSize="20pt"
+        android:textColor="@android:color/white"
+        android:background="@drawable/textedgegreen"/>
+</LinearLayout>

@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.billigo">
-
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <!--반드시 추가-->
     <uses-permission android:name="android.permission.INTERNET" />
     <!--위치정보활용시 추가-->
@@ -52,7 +49,7 @@
         <activity android:name=".DronRequestClickRegisterCheckActivity" />
         <activity android:name=".DronRequestClickRegisterActivity" />
         <activity android:name=".DronRegistResultActivity" />
-
+        <activity android:name=".DronRegistSearchMapActivity"/>
     </application>
 
 </manifest>

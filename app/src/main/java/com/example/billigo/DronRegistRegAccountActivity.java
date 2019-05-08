@@ -23,16 +23,16 @@ public class DronRegistRegAccountActivity extends BaseActivity {
         findViewById(R.id.adrrfinish).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(name.getText().toString() == "") {
+                if(name.getText().toString().length() == 0) {
                     Toast.makeText(getApplicationContext(), "예금주를 입력해주세요", Toast.LENGTH_SHORT).show();
                 } else {
-                    if(number.getText().toString() == "") {
+                    if(number.getText().toString().length() == 0) {
                         Toast.makeText(getApplicationContext(), "계좌번호를 입력해주세요", Toast.LENGTH_SHORT).show();
                     } else {
-                        if(phone.getText().toString() == "") {
+                        if(phone.getText().toString().length() == 0) {
                             Toast.makeText(getApplicationContext(), "휴대폰 번호를 입력해주세요", Toast.LENGTH_SHORT).show();
                         } else {
-                            if(certnum.getText().toString() == "") {
+                            if(certnum.getText().toString().length() == 0) {
                                 Toast.makeText(getApplicationContext(), "인증번호를 입력해주세요", Toast.LENGTH_SHORT).show();
                             } else {
                                 setResult(RESULT_OK);

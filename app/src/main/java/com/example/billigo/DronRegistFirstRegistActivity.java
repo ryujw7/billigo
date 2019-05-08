@@ -69,13 +69,13 @@ public class DronRegistFirstRegistActivity extends BaseActivity {
                         if (editText.getText().toString().length() == 0) {
                             Toast.makeText(DronRegistFirstRegistActivity.this, "닉네임을 적어주세요.", Toast.LENGTH_SHORT).show();
                         } else {
-                            if(tradeaddrbtn.getText().toString() == "") {
+                            if(tradeaddrbtn.getText().toString().length() == 0) {
                                 Toast.makeText(DronRegistFirstRegistActivity.this, "희망거래지역을 등록해주세요", Toast.LENGTH_SHORT).show();
                             } else {
-                                if (regaccbtn.getText().toString() == "") {
+                                if (regaccbtn.getText().toString().length() == 0) {
                                     Toast.makeText(DronRegistFirstRegistActivity.this, "계좌정보를 등록해주세요", Toast.LENGTH_SHORT).show();
                                 } else {
-                                    if (dronliregbtn.getText().toString() == "") {
+                                    if (dronliregbtn.getText().toString().length() == 0) {
                                         Toast.makeText(DronRegistFirstRegistActivity.this, "드론자격증번호를 등록해주세요", Toast.LENGTH_SHORT).show();
                                     } else {
                                         Intent intent = new Intent(DronRegistFirstRegistActivity.this, DronRegistDronActivity.class);
@@ -102,18 +102,21 @@ public class DronRegistFirstRegistActivity extends BaseActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode == REQUEST_TRADE_ADDR) {
-            if(requestCode == RESULT_OK) {
+            if(resultCode == RESULT_OK) {
+                Toast.makeText(DronRegistFirstRegistActivity.this, "주소 등록 완료", Toast.LENGTH_SHORT).show();
                 String getText = data.getStringExtra("result");
                 tradeaddrbtn.setText(getText + "\n(변경하려면 다시 클릭)");
                 onResume();
             }
         } else if(requestCode == REQUEST_DRON_LISENCE) {
-            if(requestCode == RESULT_OK) {
+            if(resultCode == RESULT_OK) {
+                Toast.makeText(DronRegistFirstRegistActivity.this, "자격증 등록 완료", Toast.LENGTH_SHORT).show();
                 lisenceCheck.setChecked(true);
                 onResume();
             }
         }  else if(requestCode == REQUEST_ACCOUNT) {
-            if(requestCode == RESULT_OK) {
+            if(resultCode == RESULT_OK) {
+                Toast.makeText(DronRegistFirstRegistActivity.this, "계좌 등록 완료", Toast.LENGTH_SHORT).show();
                 regaccbtn.setText("등록완료\n(변경하려면 다시 클릭)");
                 onResume();
             }

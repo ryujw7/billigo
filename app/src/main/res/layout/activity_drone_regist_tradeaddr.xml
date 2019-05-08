@@ -47,19 +47,22 @@
                 android:layout_weight="16"
                 android:background="@drawable/textedge"
                 android:hint="예) 빌리고 123-4 또는 드론 아파트"
-                android:paddingLeft="5pt" />
+                android:paddingLeft="5pt"
+                android:textSize="9pt"
+                android:textColor="@android:color/black" />
 
             <FrameLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.4"></FrameLayout>
 
-            <ImageView
-                android:id="@+id/imageView"
+            <ImageButton
+                android:id="@+id/adrt_searchbtn"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="2"
-                android:src="@drawable/search_image" />
+                android:background="@drawable/search_image"
+                android:scaleType="fitXY"/>
 
 
     </LinearLayout>
@@ -79,6 +82,7 @@
             android:layout_weight="1"></FrameLayout>
 
         <ImageButton
+            android:id="@+id/adrt_curaddr"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="16"
