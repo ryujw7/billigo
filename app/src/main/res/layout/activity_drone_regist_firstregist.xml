@@ -161,7 +161,7 @@
             android:background="@drawable/textedge"
             android:hint="사용하고자 하는 닉네임 입력"
             android:maxLength="8"
-            android:maxLines="1"
+            android:inputType="text"
             android:paddingLeft="5pt" />
 
     </LinearLayout>

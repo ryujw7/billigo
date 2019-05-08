@@ -1,5 +1,6 @@
 package com.example.billigo;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -21,10 +22,12 @@ public class DronRegistFirstRegistActivity extends BaseActivity {
     Button dronliregbtn;
     Button tradeaddrbtn;
     CheckBox lisenceCheck;
+    public static Activity firstregActivity;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_drone_regist_firstregist);
+        firstregActivity = DronRegistFirstRegistActivity.this;
         checkBox1 = (CheckBox)findViewById(R.id.infoagree);
         checkBox2 = (CheckBox)findViewById(R.id.tradeagree);
         checkBox3 = (CheckBox)findViewById(R.id.droninfoagree);
