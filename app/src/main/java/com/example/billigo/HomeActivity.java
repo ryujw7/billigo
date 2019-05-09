@@ -5,6 +5,7 @@ package com.example.billigo;
  * made by 오늘도 지구인
  * */
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -21,6 +22,7 @@ import com.nhn.android.naverlogin.ui.view.OAuthLoginButton;
 import org.json.JSONObject;
 
 public class HomeActivity extends BaseActivity {
+    public static Activity homeactivity;
     private boolean isLogin = false;
     private OAuthLoginButton naverLoginButton;
     private static OAuthLogin naverLoginInstance;
@@ -30,19 +32,21 @@ public class HomeActivity extends BaseActivity {
     String id;
     String pw;
     static Context context;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        homeactivity = (Activity)HomeActivity.this;
         init();
         init_View();
-        final EditText id_home = (EditText)findViewById(R.id.home_id);
-        final EditText pw_home = (EditText)findViewById(R.id.home_pw);
+        final EditText id_home = (EditText) findViewById(R.id.home_id);
+        final EditText pw_home = (EditText) findViewById(R.id.home_pw);
         id = id_home.getText().toString();
         pw = pw_home.getText().toString();
-                findViewById(R.id.loginbutton).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
+        findViewById(R.id.loginbutton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                 /*if(id == "ryujw7"&&pw == "1111") {
                     setResult(RESULT_OK);
                 } else {
@@ -78,6 +82,10 @@ public class HomeActivity extends BaseActivity {
                 CLIENT_ID,
                 CLIENT_SECRET,
                 CLIENT_NAME);
+        Intent intent = getIntent();
+        if(intent.getBooleanExtra("need", true)) {
+            naverLoginInstance.logout(context);
+        }
         if (naverLoginInstance.getState(context) != OAuthLoginState.NEED_LOGIN) {
             naverLoginInstance.logout(context);
             setResult(RESULT_OK);

@@ -17,9 +17,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-
-
 public class MainActivity extends BaseActivity {
+    HomeActivity activitihome = (HomeActivity)HomeActivity.homeactivity;
     private boolean addrRegist = false;
     private int REQ_LOGIN = 1;
     private int REQ_LOGOUT = 2;
@@ -56,8 +55,8 @@ public class MainActivity extends BaseActivity {
         nv = (NavigationView) findViewById(R.id.nv_main);
         header = nv.getHeaderView(0);
         backButton = (ImageButton) header.findViewById(R.id.sideback);
-        content_main = (View)findViewById(R.id.main_content);
-        textView = (TextView)findViewById(R.id.amc_title);
+        content_main = (View) findViewById(R.id.main_content);
+        textView = (TextView) findViewById(R.id.amc_title);
         item = nv.getMenu().getItem(0);
         nv.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -67,14 +66,14 @@ public class MainActivity extends BaseActivity {
                 int id = menuItem.getItemId();
                 switch (id) {
                     case R.id.login:
-                        if(item.getTitle().toString() == "로그아웃") {
-                            item.setTitle("로그인");
-                            textView.setText("로그인하려면 왼쪽 버튼 클릭");
+                        if (item.getTitle().toString() == "로그아웃") {
                             Intent intentlogout = new Intent(MainActivity.this, HomeActivity.class);
+                            intentlogout.putExtra("need", false);
                             startActivityForResult(intentlogout, REQ_LOGOUT);
                             overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                         } else {
                             Intent intentlogin = new Intent(MainActivity.this, HomeActivity.class);
+                            intentlogin.putExtra("need", true);
                             startActivityForResult(intentlogin, REQ_LOGIN);
                             overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                         }
@@ -96,11 +95,11 @@ public class MainActivity extends BaseActivity {
         findViewById(R.id.dron_regist).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(item.getTitle() == "로그아웃") {
+                if (item.getTitle() == "로그아웃") {
                     startActivity(new Intent(MainActivity.this, DronRegistMainActivity.class));
                     overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 } else {
-                    Toast.makeText(context,"로그인 먼저 해주세요", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(context, "로그인 먼저 해주세요", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -136,18 +135,17 @@ public class MainActivity extends BaseActivity {
                 Toast.makeText(this, "로그인 성공", Toast.LENGTH_SHORT).show();
                 textView.setText("로그아웃하려면 왼쪽 버튼 클릭");
             } else if (resultCode == RESULT_CANCELED) {
-                {
-                    Toast.makeText(this, "로그인 실패", Toast.LENGTH_SHORT).show();
-                    textView.setText("로그인하려면 왼쪽 버튼 클릭");
-                }
-            }
-        } else if(requestCode == REQ_LOGOUT) {
-            if(resultCode == RESULT_OK) {
-                Toast.makeText(this, "로그아웃 성공", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "로그인 실패", Toast.LENGTH_SHORT).show();
                 textView.setText("로그인하려면 왼쪽 버튼 클릭");
             }
-        } else if(requestCode == REQ_FINISH) {
-            if(resultCode == RESULT_OK) {
+        } else if (requestCode == REQ_LOGOUT) {
+            if (resultCode == RESULT_OK) {
+                item.setTitle("로그인");
+                textView.setText("로그인하려면 왼쪽 버튼 클릭");
+                Toast.makeText(this, "로그아웃 성공", Toast.LENGTH_SHORT).show();
+            }
+        } else if (requestCode == REQ_FINISH) {
+            if (resultCode == RESULT_OK) {
                 Toast.makeText(this, "로그아웃 성공", Toast.LENGTH_SHORT).show();
                 textView.setText("로그인하려면 왼쪽 버튼 클릭");
             }
@@ -159,11 +157,6 @@ public class MainActivity extends BaseActivity {
         if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
             drawerLayout.closeDrawer(GravityCompat.START);
         } else {
-            if(item.getTitle() == "로그아웃") {
-                Intent intentfinish = new Intent(MainActivity.this, HomeActivity.class);
-                startActivityForResult(intentfinish, REQ_FINISH);
-                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
-            }
             finish();
         }
     }
