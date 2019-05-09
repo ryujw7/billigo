@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="50dp"
-    android:layout_margin="8dp"
+    android:layout_height="match_parent"
+    android:layout_margin="50dp"
     android:orientation="vertical">
 
     <ProgressBar
+        android:layout_marginTop="300dp"
+        android:layout_marginHorizontal="140dp"
         android:id="@+id/progressBar"
         android:background="@drawable/farm5"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_gravity="center|center"
+        android:scaleType="fitCenter"
         android:indeterminate="true"
-        android:paddingLeft="30dp"
-        android:paddingRight="30dp" />
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp" />
 
 </LinearLayout>
