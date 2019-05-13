@@ -84,7 +84,7 @@
             android:fontFamily="@font/bmjua"
             android:gravity="center_vertical"
             android:paddingLeft="4dp"
-            android:text="확인하셨다면 완료버튼 클릭"
+            android:text="확인하셨다면 확인버튼 클릭"
             android:textColor="@android:color/holo_green_light"
             android:textSize="9pt" />
 
@@ -113,7 +113,7 @@
             android:layout_weight="8"
             android:fontFamily="@font/bmjua"
             android:gravity="center|center"
-            android:text="완료"
+            android:text="확인"
             android:textColor="@android:color/white"
             android:background="@android:color/holo_green_light"
             android:textSize="14pt" />
