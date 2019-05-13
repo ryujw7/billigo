@@ -46,25 +46,25 @@
         android:layout_weight="6"
         android:weightSum="2">
 
-        <Button
+        <ImageButton
             android:id="@+id/dron_request"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/main_textedge"
             android:fontFamily="@font/bmjua"
-            android:text="방제      요청하기"
-            android:textSize="25pt" />
+            android:scaleType="fitXY"
+            android:src="@drawable/drone_register_button" />
 
-        <Button
+        <ImageButton
             android:id="@+id/dron_regist"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/main_textedge"
             android:fontFamily="@font/bmjua"
-            android:text="드론      등록하기"
-            android:textSize="25pt" />
+            android:scaleType="fitXY"
+            android:src="@drawable/drone_requester_button" />
     </LinearLayout>
 
     <LinearLayout
@@ -77,7 +77,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/main_image"/>
+            android:src="@drawable/main_image" />
     </LinearLayout>
 
 </LinearLayout>

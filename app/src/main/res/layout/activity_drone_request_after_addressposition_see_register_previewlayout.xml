@@ -1,30 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="200dp">
+    android:layout_height="200dp"
+    app:cardElevation="6dp"
+    app:cardUseCompatPadding="true">
 
-    <android.support.v7.widget.CardView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    </android.support.v7.widget.CardView>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/textedge"
+        android:weightSum="40">
 
-    <TextView
-        android:id="@+id/text0"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="0dp"
-        android:textColor="@android:color/black"
-        android:gravity="center_vertical"
-        android:paddingLeft="15dp"
-        android:textSize="12pt"
-        android:text="등록자 닉네임 출력" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6">
 
+<<<<<<< HEAD
     <TextView
         android:id="@+id/text1"
         android:layout_width="150dp"
@@ -39,65 +33,99 @@
         android:gravity="center|center"
         android:paddingLeft="15dp"
         android:textSize="6pt" />
+=======
+            <TextView
+                android:id="@+id/text0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@android:color/black"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:fontFamily="@font/bmjua"
+                android:textSize="10pt"
+                android:text="등록자 닉네임 출력" />
+        </LinearLayout>
+>>>>>>> fda08a42f534dda7038f3cdda38f071a3ddfa75e
 
-    <TextView
-        android:id="@+id/text2"
-        android:layout_width="50dp"
-        android:layout_height="40dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginStart="150dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="0dp"
-        android:layout_below="@+id/text0"
-        android:textColor="@android:color/black"
-        android:gravity="center|center"
-        android:paddingLeft="15dp"
-        android:textSize="6pt"
-        android:text="리뷰" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:weightSum="10">
 
-    <TextView
-        android:id="@+id/text3"
-        android:layout_width="200dp"
-        android:layout_height="40dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginStart="200dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="0dp"
-        android:layout_below="@+id/text0"
-        android:textColor="@android:color/black"
-        android:gravity="center|center"
-        android:paddingLeft="15dp"
-        android:textSize="6pt"
-        android:text="개수 출력" />
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:gravity="right|center"
+                android:paddingLeft="15dp"
+                android:textSize="5pt"
+                android:text="거리" />
 
-    <TextView
-        android:id="@+id/text4"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="0dp"
-        android:layout_below="@+id/text1"
-        android:textColor="@android:color/black"
-        android:gravity="center_vertical"
-        android:paddingLeft="15dp"
-        android:textSize="12pt"
-        android:text="주요 거래지역 출력" />
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:textColor="@android:color/black"
+                android:gravity="left|center"
+                android:paddingLeft="4dp"
+                android:textSize="5pt"
+                android:text="000m(출력)" />
 
-    <ImageButton
-        android:id="@+id/button4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/text4"
-        android:layout_margin="15dp"
-        android:scaleType="fitCenter"
-        android:background="@android:color/transparent"
-        android:src="@drawable/check_register_on_off"/>
-</RelativeLayout>
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:gravity="right|center"
+                android:paddingLeft="15dp"
+                android:textSize="5pt"
+                android:text="리뷰" />
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:textColor="@android:color/black"
+                android:gravity="left|center"
+                android:paddingLeft="4dp"
+                android:textSize="5pt"
+                android:text="개수(출력)" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="12">
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@android:color/black"
+                android:gravity="center|center"
+                android:textSize="6pt"
+                android:text="주요 거래지역 및 사항(출력)" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="15">
+        <ImageButton
+            android:id="@+id/button4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="15"
+            android:scaleType="centerInside"
+            android:background="@android:color/transparent"
+            android:src="@drawable/check_register_on_off"/>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

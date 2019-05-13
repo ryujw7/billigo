@@ -1,6 +1,5 @@
 package com.example.billigo;
 
-import android.provider.ContactsContract;
 import android.support.annotation.NonNull;
 import android.support.v4.view.PagerAdapter;
 import android.view.LayoutInflater;
@@ -16,7 +15,7 @@ public class CustomAdaptor extends PagerAdapter {
     }
     @Override
     public int getCount() {
-        return 2;
+        return 4;
     }
 
     @NonNull
@@ -27,7 +26,7 @@ public class CustomAdaptor extends PagerAdapter {
         view = inflater.inflate(R.layout.fragment_image,null);
         ImageView img = (ImageView)view.findViewById(R.id.imageView);
 
-        img.setImageResource(R.drawable.main_banner+position);
+        img.setImageResource(R.drawable.drone_main_banner1+position);
         container.addView(view);
         return view;
     }
