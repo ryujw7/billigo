@@ -32,6 +32,11 @@ public class MainActivity extends BaseActivity {
     TextView textView;
     MenuItem item;
     Context context = this;
+    TextView header_name;
+    TextView header_email;
+    TextView name_label;
+    TextView email_label;
+    TextView need_login;
     private int isFirst; //  초기화면인지 파악
 
     @Override
@@ -58,6 +63,9 @@ public class MainActivity extends BaseActivity {
         content_main = (View) findViewById(R.id.main_content);
         textView = (TextView) findViewById(R.id.amc_title);
         item = nv.getMenu().getItem(0);
+        header_name = header.findViewById(R.id.header_name);
+        header_email = header.findViewById(R.id.header_email);
+        need_login = header.findViewById(R.id.need_login);
         nv.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
@@ -131,6 +139,11 @@ public class MainActivity extends BaseActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == REQ_LOGIN) {
             if (resultCode == RESULT_OK) {
+                String name = data.getStringExtra("name");
+                String email = data.getStringExtra("email");
+                header_name.setText(name);
+                header_email.setText(email);
+                need_login.setText("");
                 item.setTitle("로그아웃");
                 Toast.makeText(this, "로그인 성공", Toast.LENGTH_SHORT).show();
                 textView.setText("로그아웃하려면 왼쪽 버튼 클릭");
@@ -140,6 +153,9 @@ public class MainActivity extends BaseActivity {
             }
         } else if (requestCode == REQ_LOGOUT) {
             if (resultCode == RESULT_OK) {
+                header_name.setText("");
+                header_email.setText("");
+                need_login.setText("로그인해주세요.");
                 item.setTitle("로그인");
                 textView.setText("로그인하려면 왼쪽 버튼 클릭");
                 Toast.makeText(this, "로그아웃 성공", Toast.LENGTH_SHORT).show();
