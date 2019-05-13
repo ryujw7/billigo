@@ -19,6 +19,7 @@ import com.nhn.android.naverlogin.OAuthLoginHandler;
 import com.nhn.android.naverlogin.data.OAuthLoginState;
 import com.nhn.android.naverlogin.ui.view.OAuthLoginButton;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 
 public class HomeActivity extends BaseActivity {
@@ -32,7 +33,8 @@ public class HomeActivity extends BaseActivity {
     String id;
     String pw;
     static Context context;
-
+    String name;
+    String email;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -99,9 +101,25 @@ public class HomeActivity extends BaseActivity {
             @Override
             public void run(boolean b) {
                 if (b) {
-                    setResult(RESULT_OK);
-                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
-                    finish();
+                    new Thread() {
+                        public void run() {
+                            String accessToken = naverLoginInstance.getAccessToken(context);
+                            String url = "https://openapi.naver.com/v1/nid/me";
+                            String data = naverLoginInstance.requestApi(context, accessToken, url);
+                            try {
+                                JSONObject result = new JSONObject(data);
+                                name = result.getJSONObject("response").getString("name");
+                                email = result.getJSONObject("response").getString("email");
+                                Intent intent = new Intent();
+                                intent.putExtra("name", name);
+                                intent.putExtra("email",email);
+                                setResult(RESULT_OK, intent);
+                                finish();
+                            } catch (JSONException e) {
+
+                            }
+                        }
+                    }.start();
                 } else {
                     setResult(RESULT_CANCELED);
                     overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
@@ -113,28 +131,5 @@ public class HomeActivity extends BaseActivity {
             }
         };
         naverLoginButton.setOAuthLoginHandler(naverLoginHandler);
-    }
-
-    private class RequestApiTask extends AsyncTask<Void, Void, String> {
-        @Override
-        protected void onPreExecute() {//작업이 실행되기 전에 먼저 실행.
-        }
-
-        @Override
-        protected String doInBackground(Void... params) {//네트워크에 연결하는 과정이 있으므로 다른 스레드에서 실행되어야 한다.
-            String url = "https://openapi.naver.com/v1/nid/me";
-            String at = naverLoginInstance.getAccessToken(context);
-            return naverLoginInstance.requestApi(context, at, url);//url, 토큰을 넘겨서 값을 받아온다.json 타입으로 받아진다.
-        }
-
-        protected void onPostExecute(String content) {//doInBackground 에서 리턴된 값이 여기로 들어온다.
-            try {
-                JSONObject jsonObject = new JSONObject(content);
-                JSONObject response = jsonObject.getJSONObject("response");
-                String email = response.getString("email");
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
     }
 }

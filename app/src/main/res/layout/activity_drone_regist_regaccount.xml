@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:weightSum="22">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
-
-        <Button
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@drawable/main_textedge"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="22">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_textedge"
             android:fontFamily="@font/bmjua"
             android:gravity="center"
             android:text="거래 계좌 등록"
@@ -62,7 +62,10 @@
                 android:layout_weight="1"
                 android:background="@drawable/textedge"
                 android:hint="계좌 개설 당시의 명의를 입력해주세요"
-                android:paddingLeft="5pt" />
+                android:paddingLeft="5pt"
+                android:maxLines="1"
+                android:inputType="textPersonName"
+                android:maxLength="6"/>
         </LinearLayout>
 
     </LinearLayout>
@@ -85,24 +88,44 @@
             android:orientation="vertical"
             android:weightSum="2">
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="10">
+                <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
                 android:fontFamily="@font/bmjua"
                 android:gravity="center_vertical"
                 android:paddingLeft="5pt"
                 android:text="은행"
                 android:textColor="@android:color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:fontFamily="@font/bmjua"
+                    android:gravity="bottom"
+                    android:paddingBottom="3.5pt"
+                    android:textSize="5pt"
+                    android:text="(하단 버튼 클릭하여 은행 선택)"
+                    android:textColor="@android:color/black"
+                    />
+            </LinearLayout>
 
-            <ListView
+
+            <Button
                 android:id="@+id/adrraccbank"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:background="@drawable/textedge"
-                android:hint="해당 계좌 개설 은행"
-                android:paddingLeft="5pt" />
+                android:hint="원하는 은행을 선택해주세요."
+                android:paddingLeft="5pt"
+                android:numColumns="auto_fit"/>
         </LinearLayout>
 
     </LinearLayout>
@@ -143,7 +166,10 @@
                 android:background="@drawable/textedge"
                 android:hint="계좌번호 입력(-없이 입력하여 주세요)"
                 android:textSize="6pt"
-                android:paddingLeft="5pt" />
+                android:paddingLeft="5pt"
+                android:inputType="number"
+                android:maxLines="1"
+                android:maxLength="20"/>
         </LinearLayout>
 
     </LinearLayout>
@@ -190,7 +216,9 @@
                     android:background="@drawable/textedge"
                     android:hint="휴대폰 번호 입력(-빼고 입력)"
                     android:textSize="6pt"
-                    android:paddingLeft="5pt" />
+                    android:paddingLeft="5pt"
+                    android:inputType="number"
+                    android:maxLength="11"/>
 
                 <FrameLayout
                     android:layout_width="0dp"
@@ -254,7 +282,10 @@
                     android:background="@drawable/textedge"
                     android:hint="인증번호 6자리 입력"
                     android:textSize="6pt"
-                    android:paddingLeft="5pt" />
+                    android:paddingLeft="5pt"
+                    android:maxLines="1"
+                    android:maxLength="6"
+                    android:inputType="number"/>
 
                 <FrameLayout
                     android:layout_width="0dp"
@@ -299,6 +330,7 @@
         android:weightSum="20">
 
         <Button
+            android:id="@+id/adrrbackbtn"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="10"

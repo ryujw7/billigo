@@ -50,6 +50,7 @@
         <activity android:name=".DronRequestClickRegisterActivity" />
         <activity android:name=".DronRegistResultActivity" />
         <activity android:name=".DronRegistSearchMapActivity"/>
+        <activity android:name=".BankGridViewActivity"/>
     </application>
 
 </manifest>
