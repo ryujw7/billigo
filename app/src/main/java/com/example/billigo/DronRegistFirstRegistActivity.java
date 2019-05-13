@@ -94,18 +94,19 @@ public class DronRegistFirstRegistActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
                 finish();
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             }
         });
     }
 
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode == REQUEST_TRADE_ADDR) {
             if(resultCode == RESULT_OK) {
                 Toast.makeText(DronRegistFirstRegistActivity.this, "주소 등록 완료", Toast.LENGTH_SHORT).show();
                 String getText = data.getStringExtra("result");
-                tradeaddrbtn.setText(getText + "\n(변경하려면 다시 클릭)");
+                tradeaddrbtn.setText(getText + "(변경하려면 다시 클릭)");
                 onResume();
             }
         } else if(requestCode == REQUEST_DRON_LISENCE) {

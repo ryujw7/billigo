@@ -38,8 +38,7 @@
         android:textColor="@android:color/black"
         android:gravity="center|center"
         android:paddingLeft="15dp"
-        android:textSize="6pt"
-        android:text="요청자 <-> 등록자 거리" />
+        android:textSize="6pt" />
 
     <TextView
         android:id="@+id/text2"
