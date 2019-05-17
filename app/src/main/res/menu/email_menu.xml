@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/google"
+        android:title="구글" />
+    <item android:id="@+id/naver"
+        android:title="네이버" />
+    <item android:id="@+id/hanmail"
+        android:title="다음(한메일)" />
+</menu>

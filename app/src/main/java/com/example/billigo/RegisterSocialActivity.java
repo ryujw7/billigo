@@ -4,6 +4,8 @@ package com.example.billigo;
  * made by 오늘도 지구인
  * */
 
+import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -17,12 +19,17 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
-public class RegisterActivity extends BaseActivity implements OnCheckedChangeListener {
+public class RegisterSocialActivity extends BaseActivity implements OnCheckedChangeListener {
     CheckBox allagree;
     CheckBox agree1;
     CheckBox agree2;
     CheckBox agree3;
     String id;
+    String[] id_arr;
+    String name;
+    String birthday;
+    String gender;
+    String email;
     EditText register_id;
     EditText register_pw;
     EditText register_pw_repeat;
@@ -37,7 +44,7 @@ public class RegisterActivity extends BaseActivity implements OnCheckedChangeLis
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
+        setContentView(R.layout.activity_register_social);
         allagree = (CheckBox) findViewById(R.id.register_allagree);
         agree1 = (CheckBox) findViewById(R.id.register_agree1);
         agree2 = (CheckBox) findViewById(R.id.register_agree2);
@@ -52,6 +59,34 @@ public class RegisterActivity extends BaseActivity implements OnCheckedChangeLis
         register_birthday = (EditText) findViewById(R.id.register_birthday);
         register_email = (EditText) findViewById(R.id.register_email);
         email_list_btn = (Button) findViewById(R.id.register_list);
+        Intent intent = getIntent();
+        name = intent.getStringExtra("name");
+        birthday = intent.getStringExtra("birthday");
+        gender = intent.getStringExtra("gender");
+        email = intent.getStringExtra("email");
+        register_name.setText(name);
+        register_name.setEnabled(false);
+        register_name.setTextColor(Color.parseColor("#000000"));
+        if (gender.matches("F")) {
+            register_gender_girl.setChecked(true);
+            register_gender_girl.setEnabled(false);
+            register_gender_man.setEnabled(false);
+            register_gender_girl.setTextColor(Color.parseColor("#000000"));
+            register_gender_man.setTextColor(Color.parseColor("#000000"));
+        } else if (gender.matches("M")) {
+            register_gender_man.setChecked(true);
+            register_gender_girl.setEnabled(false);
+            register_gender_man.setEnabled(false);
+            register_gender_girl.setTextColor(Color.parseColor("#000000"));
+            register_gender_man.setTextColor(Color.parseColor("#000000"));
+        }
+        id_arr = email.split("@");
+        id = id_arr[0];
+        register_email.setText(id);
+        register_email.setEnabled(false);
+        register_email.setTextColor(Color.parseColor("#000000"));
+        email_list_btn.setText("naver.com");
+        email_list_btn.setEnabled(false);
         email_list_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -94,16 +129,8 @@ public class RegisterActivity extends BaseActivity implements OnCheckedChangeLis
                     Toast.makeText(getApplicationContext(), "비밀번호는 입력해주세요.(4자리이상)", Toast.LENGTH_SHORT).show();
                     return;
                 }
-                if(register_pw.getText().toString() != register_pw_repeat.getText().toString()) {
+                if(!(register_pw.getText().toString().matches(register_pw_repeat.getText().toString()))) {
                     Toast.makeText(getApplicationContext(), "비밀번호가 일치하지 않습니다!", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                if(register_gender_girl.isChecked() || register_gender_man.isChecked()) {
-                    Toast.makeText(getApplicationContext(), "성별을 선택해 주세요.", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                if(register_birthday.getText().length() != 8) {
-                    Toast.makeText(getApplicationContext(), "생년월일 8자리 입력해주세요! (예:19940706)", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 setResult(RESULT_OK);

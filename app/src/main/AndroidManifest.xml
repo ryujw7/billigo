@@ -21,7 +21,9 @@
         android:label="빌리고"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        >
         <meta-data
             android:name="com.naver.maps.map.CLIENT_ID"
             android:value="i1lg50trzo" />
@@ -34,7 +36,6 @@
         <activity android:name=".HomeActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".RegisterActivity" />
-        <activity android:name=".RegTermsActivity" />
         <activity android:name=".SearchidActivity" />
         <activity android:name=".SearchpwActivity" />
         <activity android:name=".DronRegistMainActivity" />
@@ -51,6 +52,8 @@
         <activity android:name=".DronRegistResultActivity" />
         <activity android:name=".DronRegistSearchMapActivity"/>
         <activity android:name=".BankGridViewActivity"/>
+        <activity android:name=".RegisterSocialActivity"/>
+        <activity android:name=".DronRequestAfterAddresspositionSeeRegisterActivity"/>
     </application>
 
 </manifest>

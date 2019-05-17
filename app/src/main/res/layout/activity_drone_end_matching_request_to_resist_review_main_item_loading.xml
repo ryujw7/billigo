@@ -6,15 +6,15 @@
     android:orientation="vertical">
 
     <ProgressBar
-        android:layout_marginTop="300dp"
-        android:layout_marginHorizontal="140dp"
         android:id="@+id/progressBar"
-        android:background="@drawable/farm5"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:scaleType="fitCenter"
+        android:layout_marginHorizontal="140dp"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/farm5"
         android:indeterminate="true"
         android:paddingLeft="50dp"
-        android:paddingRight="50dp" />
+        android:paddingRight="50dp"
+        android:scaleType="fitCenter" />
 
 </LinearLayout>

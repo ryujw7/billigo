@@ -114,14 +114,8 @@ public class MainActivity extends BaseActivity {
         findViewById(R.id.dron_request).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (addrRegist == false) {
-                    addrRegist = true;
                     startActivity(new Intent(MainActivity.this, DronRequestChaddrActivity.class));
                     overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
-                } else {
-                    startActivity(new Intent(MainActivity.this, DronRequestClickRegisterActivity.class));
-                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
-                }
             }
         });
         backButton.setOnClickListener(new View.OnClickListener() {

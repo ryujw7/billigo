@@ -12,7 +12,7 @@
             android:layout_width="match_parent"
             android:layout_height="1200dp"
             android:orientation="vertical"
-            android:weightSum="30">
+            android:weightSum="27">
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -315,9 +315,9 @@
                         android:background="@drawable/textedge"
                         android:hint="아이디 입력"
                         android:paddingLeft="5pt"
-                        android:inputType="text"
+                        android:maxLength="12"
                         android:maxLines="1"
-                        android:maxLength="12"/>
+                        android:inputType="textPersonName"/>
                 </LinearLayout>
 
             </LinearLayout>
@@ -358,7 +358,9 @@
                         android:background="@drawable/textedge"
                         android:hint="비밀번호 입력"
                         android:paddingLeft="5pt"
-                        android:inputType="textPassword"/>
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:maxLength="15"/>
                 </LinearLayout>
 
             </LinearLayout>
@@ -399,7 +401,9 @@
                         android:background="@drawable/textedge"
                         android:hint="위 비밀번호 창과 동일하게 입력"
                         android:paddingLeft="5pt"
-                        android:inputType="textPassword"/>
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:maxLength="15"/>
                 </LinearLayout>
 
             </LinearLayout>
@@ -440,7 +444,9 @@
                         android:background="@drawable/textedge"
                         android:hint="이름 입력"
                         android:paddingLeft="5pt"
-                        android:inputType="textPersonName"/>
+                        android:inputType="textPersonName"
+                        android:maxLength="6"
+                        android:maxLines="1"/>
                 </LinearLayout>
 
 
@@ -598,7 +604,10 @@
                             android:background="@drawable/textedge"
                             android:fontFamily="@font/bmjua"
                             android:hint="이메일 입력"
-                            android:paddingLeft="5pt" />
+                            android:paddingLeft="5pt"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:maxLength="20"/>
 
                         <TextView
                             android:layout_width="0dp"
@@ -623,124 +632,6 @@
                     </LinearLayout>
                 </LinearLayout>
 
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="2"
-                android:weightSum="10">
-
-                <FrameLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"></FrameLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="8"
-                    android:orientation="vertical"
-                    android:weightSum="2">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="1"
-                        android:fontFamily="@font/bmjua"
-                        android:gravity="center_vertical"
-                        android:paddingLeft="5pt"
-                        android:text="본인 인증"
-                        android:textColor="@android:color/black" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="1"
-                        android:weightSum="12">
-
-                        <EditText
-                            android:id="@+id/regiter_phone"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="7.5"
-                            android:background="@drawable/textedge"
-                            android:hint="휴대폰 번호 입력"
-                            android:paddingLeft="5pt" />
-
-                        <FrameLayout
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="0.5"></FrameLayout>
-
-                        <Button
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="4"
-                            android:background="@drawable/textedgegreen"
-                            android:fontFamily="@font/bmjua"
-                            android:gravity="center|center"
-                            android:text="인증번호 전송"
-                            android:textColor="@android:color/black" />
-                    </LinearLayout>
-                </LinearLayout>
-            </LinearLayout>
-
-
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.5"></FrameLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:weightSum="10">
-
-                <FrameLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"></FrameLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="8"
-                    android:orientation="vertical"
-                    android:weightSum="2">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="2"
-                        android:weightSum="12">
-
-                        <EditText
-                            android:id="@+id/register_certnum"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="7.5"
-                            android:background="@drawable/textedge"
-                            android:hint="인증번호 입력"
-                            android:paddingLeft="5pt" />
-
-                        <FrameLayout
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="0.5"></FrameLayout>
-
-                        <Button
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="4"
-                            android:background="@drawable/textedgegreen"
-                            android:fontFamily="@font/bmjua"
-                            android:gravity="center|center"
-                            android:text="인증하기"
-                            android:textColor="@android:color/black" />
-                    </LinearLayout>
-                </LinearLayout>
             </LinearLayout>
 
             <FrameLayout

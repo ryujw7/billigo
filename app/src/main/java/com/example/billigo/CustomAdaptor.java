@@ -26,7 +26,7 @@ public class CustomAdaptor extends PagerAdapter {
         view = inflater.inflate(R.layout.fragment_image,null);
         ImageView img = (ImageView)view.findViewById(R.id.imageView);
 
-        img.setImageResource(R.drawable.drone_main_banner1+position);
+        img.setImageResource(R.drawable.drone_main_banner0+position);
         container.addView(view);
         return view;
     }
