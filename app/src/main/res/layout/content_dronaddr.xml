@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.billigo.DronRequestAfterAddresspositionSeeRegisterActivity"
+    tools:showIn="@layout/activity_drone_request_after_addressposition_see_register">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="20"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:text="방제사 정보를 보고 싶으시면 \n지도의 마크(초록색)을 클릭하세요."
+            android:textSize="9pt"
+            android:fontFamily="@font/bmjua"
+            android:background="@drawable/textedgegreen"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/white"
+            android:paddingLeft="10pt"
+            />
+        <fragment
+            android:id="@+id/navermap_map_view"
+            android:name="com.naver.maps.map.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="18.5"/>
+    </LinearLayout>
+</LinearLayout>

@@ -36,7 +36,6 @@ import java.net.URL;
 
 public class HomeActivity extends BaseActivity {
     public static Activity homeactivity;
-    private boolean isLogin = false;
     private OAuthLoginButton naverLoginButton;
     private static OAuthLogin naverLoginInstance;
     private int REQUEST_SOCIAL_REGISTER = 10;
@@ -48,6 +47,7 @@ public class HomeActivity extends BaseActivity {
     String id;
     String pw;
     static Context context;
+    String isLogin;
     String social_id;
     String name;
     String email;
@@ -90,6 +90,8 @@ public class HomeActivity extends BaseActivity {
                     @Override
                     public void run() {
                         HttpURLConnection con = null;
+                        String result;
+                        Intent intent = new Intent();
                         try {
                             url = new URL("http://3.17.67.156:5000/login");
                             String output = jsonObject.toString();
@@ -108,19 +110,25 @@ public class HomeActivity extends BaseActivity {
                             os.write(output);
                             os.flush();
                             BufferedReader br = new BufferedReader(new InputStreamReader(con.getInputStream(), "UTF-8"));
+                            StringBuilder stringBuilder = new StringBuilder();
                             String buf;
-                            buf = br.readLine();
-                            Intent intent = new Intent();
-                            intent.putExtra("name", "손수영");
-                            intent.putExtra("email", "poew1114@naver.com");
-                            if(buf.matches("\"yes\"")) {
-                                setResult(RESULT_OK,intent);
-                                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
-                                finish();
-                            } else if(buf.matches("\"no\"")) {
-                                setResult(RESULT_CANCELED);
-                                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
-                                finish();
+                            while((buf = br.readLine()) != null) {
+                                stringBuilder.append(buf);
+                            }
+                            br.close();
+                            result = stringBuilder.toString().trim();
+                            if(jsonparser(result)) {
+                                if(isLogin.matches("yes")) {
+                                    intent.putExtra("email",email);
+                                    intent.putExtra("name", name);
+                                    setResult(RESULT_OK,intent);
+                                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+                                    finish();
+                                } else if(isLogin.matches("no")) {
+                                    setResult(RESULT_CANCELED);
+                                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+                                    finish();
+                                }
                             }
                         } catch (IOException e) {
                             setResult(RESULT_CANCELED);
@@ -215,6 +223,24 @@ public class HomeActivity extends BaseActivity {
             }
         };
         naverLoginButton.setOAuthLoginHandler(naverLoginHandler);
+    }
+    public boolean jsonparser(String jsonstring) {
+        if(jsonstring == null) {
+            return false;
+        }
+        jsonstring = jsonstring.replace("jsonFlickrApi(", "");
+        jsonstring = jsonstring.replace(")", "");
+
+        try {
+            JSONObject jsonObject = new JSONObject(jsonstring);
+            isLogin = jsonObject.getString("Answer");
+            email = jsonObject.getString("Email");
+            name = jsonObject.getString("Name");
+            return true;
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return false;
     }
 
     @Override

@@ -1,18 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context="com.example.billigo.DronRequestAfterAddresspositionSeeRegisterActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@android:color/transparent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="10">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:background="@drawable/textedge"
+                android:fontFamily="@font/bmjua"
+                android:gravity="center_vertical"
+                android:hint="키워드로 찾기\n(ex, 3000평 방제 등)"
+                android:paddingLeft="10dp"
+                android:textSize="9pt" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@android:color/black"
+                android:text="검색"
+                android:gravity="center|center"
+                android:scaleType="fitXY"
+                android:fontFamily="@font/bmjua"
+                android:textSize="15pt"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_dronaddr" />
+
+
+</android.support.design.widget.CoordinatorLayout>
+
+<!--
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:weightSum="1">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1.48"
+            android:layout_weight="0.7"
             android:weightSum="10">
 
             <EditText
@@ -37,17 +89,21 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="700dp">
+                android:layout_height="650dp">
+
                 <fragment
                     android:id="@+id/navermap_map_view"
                     android:name="com.naver.maps.map.MapFragment"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />
             </LinearLayout>
-
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:layout_height="200dp">
-        </HorizontalScrollView>
     </LinearLayout>
-</android.support.v4.widget.NestedScrollView>
+    <FrameLayout
+        android:id="@+id/design_bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/bottom_sheet_behavior"
+        app:>
+    </FrameLayout>
+</android.support.design.widget.CoordinatorLayout>
+-->
