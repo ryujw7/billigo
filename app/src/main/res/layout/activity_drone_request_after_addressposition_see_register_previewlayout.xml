@@ -10,87 +10,84 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:weightSum="40">
+        android:weightSum="42">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="6">
 
-    <TextView
-        android:layout_width="150dp"
-        android:layout_height="40dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="0dp"
-        android:layout_below="@+id/text0"
-        android:textColor="@android:color/black"
-        android:gravity="center|center"
-        android:paddingLeft="15dp"
-        android:textSize="6pt" />
             <TextView
                 android:id="@+id/text0"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:textColor="@android:color/black"
-                android:gravity="center_vertical"
-                android:paddingLeft="15dp"
                 android:fontFamily="@font/bmjua"
-                android:textSize="10pt"
-                android:text="등록자 닉네임 출력" />
+                android:gravity="center|center"
+                android:paddingLeft="15dp"
+                android:text="등록자 닉네임 출력"
+                android:textColor="@android:color/black"
+                android:textSize="10pt" />
         </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"></FrameLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="6"
-            android:weightSum="10">
+            android:weightSum="12">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></FrameLayout>
 
             <TextView
                 android:id="@+id/text1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_weight="1.5"
+                android:gravity="center|center"
+                android:text="거리"
                 android:textColor="@android:color/black"
-                android:gravity="right|center"
-                android:paddingLeft="15dp"
-                android:textSize="5pt"
-                android:text="거리" />
+                android:textSize="8pt"
+                android:textStyle="bold"/>
 
             <TextView
-                android:id="@+id/text2"
+                android:id="@+id/distance"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="3"
-                android:textColor="@android:color/black"
-                android:gravity="left|center"
+                android:layout_weight="3.5"
+                android:gravity="center|center"
                 android:paddingLeft="4dp"
-                android:textSize="5pt"
-                android:text="000m(출력)" />
+                android:text="0m(출력)"
+                android:textColor="@android:color/black"
+                android:textSize="8pt" />
 
             <TextView
                 android:id="@+id/text3"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_weight="1.5"
+                android:gravity="center|center"
+                android:text="리뷰"
                 android:textColor="@android:color/black"
-                android:gravity="right|center"
-                android:paddingLeft="15dp"
-                android:textSize="5pt"
-                android:text="리뷰" />
+                android:textSize="8pt"
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/text4"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="3"
+                android:layout_weight="3.5"
+                android:gravity="center|center"
+                android:paddingLeft="5pt"
+                android:text="개수(출력)"
                 android:textColor="@android:color/black"
-                android:gravity="left|center"
-                android:paddingLeft="4dp"
-                android:textSize="5pt"
-                android:text="개수(출력)" />
+                android:textSize="8pt" />
         </LinearLayout>
 
         <LinearLayout
@@ -102,10 +99,10 @@
                 android:id="@+id/text5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:textColor="@android:color/black"
                 android:gravity="center|center"
-                android:textSize="6pt"
-                android:text="주요 거래지역 및 사항(출력)" />
+                android:text="주요 거래지역 및 사항(출력)"
+                android:textColor="@android:color/black"
+                android:textSize="10pt" />
         </LinearLayout>
 
 
@@ -113,14 +110,15 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="15">
-        <ImageButton
-            android:id="@+id/button4"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="15"
-            android:scaleType="centerInside"
-            android:background="@android:color/transparent"
-            android:src="@drawable/check_register_on_off"/>
+
+            <ImageButton
+                android:id="@+id/showrequestinfo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="15"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:src="@drawable/check_register_on_off" />
         </LinearLayout>
     </LinearLayout>
 </android.support.v7.widget.CardView>

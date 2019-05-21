@@ -7,6 +7,7 @@ import android.view.View;
 
 public class DronRegistDronActivity extends BaseActivity {
     public static Activity dronregdronActivity;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

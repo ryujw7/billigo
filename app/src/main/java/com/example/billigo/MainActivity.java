@@ -88,7 +88,7 @@ public class MainActivity extends BaseActivity {
                         break;
                     case R.id.homepage:
                         Intent homepageintent = new Intent(Intent.ACTION_VIEW);
-                        homepageintent.setData(Uri.parse("http://naver.com"));
+                        homepageintent.setData(Uri.parse("https://earthpeople.creatorlink.net"));
                         try {
                             startActivity(homepageintent);
                         } catch (Exception e) {
